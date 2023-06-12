@@ -1,2 +1,5 @@
-# Exclude JSON files in the root folder
+*.css
+*.svg
+node_modules
+.vscode
 *.json
