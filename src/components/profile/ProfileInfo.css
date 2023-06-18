@@ -1,0 +1,86 @@
+.header {
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile_container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.select_ethnicity, .select_race, .select_sex {
+    margin: 0.5rem auto 1rem auto;
+    border: 1px solid black;
+    font-size: 15px;
+    width: 95%;
+  }
+
+input[type="date"] {
+    border: 1px solid black;
+    font-size: 15px;
+    width: 95%;
+}
+
+.profile_continue_button {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 95%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    background-color: slateblue;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.self_race, .self_sex {
+    margin-top: 0;
+    font-size: 15px;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+
+.self_sex {
+    margin-bottom: 1rem;
+}
+.required_dob::after {
+    content: "*";
+    color: red;
+}
+@media (max-width:600px) {
+    .subtitle {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:450px) {
+    .profile_continue_button {
+        width: 100%;
+    }
+}
+
+@media (max-width:321px) {
+    .header {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:300px) {
+    .subtitle {
+       font-size: 0.85rem;
+    }
+    .header {
+        font-size: 1.5rem;
+     }
+
+     select {
+        font-size: 15px;
+     }
+}
