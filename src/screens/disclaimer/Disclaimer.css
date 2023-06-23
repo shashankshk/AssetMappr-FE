@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.disclaimer_app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 1rem 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+.profile_info_title {
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+.disclaimer_subtitle {
+    color: black;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.disclaimer_content {
+    text-align: left;
+    font-size: 0.85rem;
+    color: black;
+
+}
+.content_title {
+    color: slateblue;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+ul.disclaimer_list {
+    list-style-type: disc;
+    color: black;
+    margin-left: 1rem;
+}
+
+.accept_button {
+    display: block;
+    margin: 3rem auto 1rem auto;
+    width: 90%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    background-color: slateblue;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.accept_button {
+    width: 95%;
+    margin-top: 1rem;
+}
+
+@media (max-width:600px) {
+    .subtitle {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:450px) {
+    .accept_button {
+        width: 100%;
+    }
+    .profile_info_title {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:321px) {
+    .profile_info_title {
+        font-size: 1rem;
+    }
+}
+
+

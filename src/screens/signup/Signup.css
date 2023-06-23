@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: slateblue;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.signup_header {
+    color: black;
+    text-align: center;
+}
+.subheader {
+    color: slateblue;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.name_asterix {
+    position: absolute;
+    top: calc(39.5%);
+    margin-left: 7.3rem;
+    font-size: 0.45rem;
+    color: red;
+}
+
+.email_asterix {
+    position: absolute;
+    top: calc(67.5%);
+    margin-left: 4.7rem;
+    font-size: 0.55rem;
+    color: red;
+}
+
+input {
+    font-family: 'Nunito', sans-serif;
+    width: 80%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.signup2_button {
+    display: block;
+    width: 90%;
+    margin: 3rem auto 1rem auto;
+    margin-top: 1rem;
+    padding: 0.75rem 0.75rem;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    background-color: slateblue;
+    color: black;
+    border: 2px solid transparent;
+}
+
+.signup2_button:hover {
+    border: 2px solid slateblue;
+    background-color: black;
+}
+
+.errmsg {
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+@media (max-width:750px) {
+    .name_asterix {
+        margin-left: 7.15rem;
+    }
+}
+
+@media (max-width:580px) {
+    .name_asterix {
+        margin-left: 7.3rem;
+    }
+}
+@media (max-width:540px) {
+    .name_asterix {
+        margin-left: 7.1rem;
+    }
+}
+@media (max-width:450px) {
+    .signup2_button {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    input {
+        width: 98%;
+    }
+    .name_asterix {
+        margin-left: 7.5rem;
+    }
+    .signup_header {
+        display: none;
+    }
+}
+
+@media (max-width:321px) {
+    .signup_header {
+        font-size: 2.5rem;
+    }
+    .subheader {
+        font-size: 2.5rem;
+     }
+}
+@media (max-width:300px) {
+    .subheader {
+       font-size: 2rem;
+    }
+    .signup_header {
+        font-size: 2rem;
+     }
+}

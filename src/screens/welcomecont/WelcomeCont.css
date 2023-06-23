@@ -1,0 +1,87 @@
+body {
+    min-height: 100vh;
+}
+
+.welcome2_title {
+    margin-top: 2rem;
+    color: black;
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+.welcome2_subtitle {
+    margin-top: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.signup_button, .login_button {
+    display: block;
+    margin: 3rem auto 1rem auto;
+    width: 95%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    background-color: slateblue;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.signup_button {
+    margin-bottom: 0;
+}
+
+.login_button {
+    margin-top: 0.95rem;
+    background-color: white;
+    color: black;
+    border: 0.25px solid black;
+    margin-bottom: 2rem;
+}
+.skip {
+    color: black;
+    text-align: center;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.admin {
+    color: slateblue;
+    font-size: 0.95rem;
+}
+@media (max-width:600px) {
+    .welcome2_subtitle {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:450px) {
+    .signup_button, .login_button {
+        width: 100%;
+    }
+    .admin {
+        position: absolute;
+        bottom: 25px;
+    }
+}
+
+@media (max-width:321px) {
+    .welcome2_title {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:300px) {
+    .welcome2_subtitle {
+       font-size: 0.85rem;
+    }
+    .welcome2_title {
+        font-size: 2rem;
+     }
+}
