@@ -1,34 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.App {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    padding: 1rem 1rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
-
-section {
-    width: 100%;
-    max-width: 70vw;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-   
-}
-
 h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 3rem;
@@ -37,20 +9,6 @@ h1 {
 
 body {
     min-height: 100vh;
-}
-
-.welcome_title {
-    /*font-family: 'Roboto', sans-serif;*/
-    margin-top: 2rem;
-    color: black;
-    text-align: center;
-    font-size: 2.7rem;
-}
-
-.subtitle {
-    margin-top: 1rem;
-    color: black;
-    text-align: center;
 }
 
 .select_community {
@@ -66,72 +24,7 @@ form {
   padding-bottom: 1rem;
 }
 
-select {
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    width: 95%;
-    margin: 3rem auto 1rem auto;
-    padding: 0.5rem;
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-}
 
-.welcome_continue_button {
-    display: block;
-    margin: 3rem auto 2rem auto;
-    margin-top: 0;
-    width: 95%;
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
-    outline: 0;
-    font-size: 1rem;
-    font-family: 'Nunito', sans-serif;
-    cursor: pointer;
-    background-color: slateblue;
-    color: white;
-    border: 2px solid transparent;
-}
-
-.disabled {
-    opacity: 0.5; /* Example: reduce opacity to visually indicate the button is disabled */
-    pointer-events: none; /* Disable pointer events to prevent clicks */
-    /* Add any other desired styles */
-}
-
-@media (max-width:600px) {
-    .subtitle {
-        margin-top: 2rem;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width:450px) {
-    .welcome_continue_button {
-        width: 100%;
-    }
-    select {
-        width: 100%;
-    }
-}
-
-@media (max-width:321px) {
-    .welcome_title {
-        font-size: 2.5rem;
-    }
-}
-@media (max-width:300px) {
-    .subtitle {
-       font-size: 0.85rem;
-    }
-    .welcome_title {
-        font-size: 2rem;
-     }
-
-     select {
-        font-size: 15px;
-     }
-}
 
 
 

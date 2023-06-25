@@ -1,4 +1,3 @@
-import './WelcomeOnSignup.css';
 import Card from '../../components/card/Card';
 import backgroundImage from '../../images/background_image.png';
 import { useState, useEffect } from 'react';
@@ -6,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import Icon from '../../components/icon/Icon';
 import Background from '../../components/background/Background';
-import Header from '../../components/title/Header';
+import Header from '../../components/title/header/Header';
 import Button from '../../components/button/Button';
 // component showing the welcome message to users after signing up
 // TODO: for mobile browser view, button needs to be at bottom of screen

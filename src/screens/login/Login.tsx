@@ -1,10 +1,9 @@
 import { useRef, useState, useEffect } from 'react';
 import Card from '../../components/card/Card';
-import './Login.css';
 import backgroundImage from '../../images/background_image.png';
 import Background from '../../components/background/Background';
-import Header from '../../components/title/Header';
-import InputField from '../../components/input/InputField';
+import Header from '../../components/title/header/Header';
+import InputField from '../../components/input/inputfield/InputField';
 import Button from '../../components/button/Button';
 // Component handling the login functionality for the user
 const Login = () => {

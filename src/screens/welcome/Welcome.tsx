@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import Button from '../../components/button/Button';
 import SelectOption from '../../components/select/SelectOption';
 import Background from '../../components/background/Background';
-import Header from '../../components/title/Header';
+import Header from '../../components/title/header/Header';
+import Subheader from '../../components/title/subheader/Subheader';
 // The first welcome component which prompts user to enter name of community.
 const Welcome = () => {
     const [selectedOption, setSelectedOption] = useState('');
@@ -41,9 +42,7 @@ const Welcome = () => {
         <Background classname='App' backgroundImage={imageUrl}>
         <Card>
             <Header classname='welcome_title' content='Welcome to Asset Mappr!'/>
-            <p className="subtitle">
-                    Select your community to get started
-            </p>
+            <Subheader classname='subtitle' content='Select your community to get started'/>
             <form>
             <div className="select_community">
                 <SelectOption name='community' id='community' onchange={(e) => setSelectedOption(e.target.value)} initialValue='' initialLabel='Select one' options={options}></SelectOption>

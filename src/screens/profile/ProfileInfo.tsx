@@ -4,9 +4,9 @@ import './ProfileInfo.css';
 import backgroundImage from '../../images/background_image.png';
 import { useNavigate } from 'react-router-dom';
 import Background from '../../components/background/Background';
-import Header from '../../components/title/Header';
-import InputLabel from '../../components/input/InputLabel';
-import InputField from '../../components/input/InputField';
+import Header from '../../components/title/header/Header';
+import InputLabel from '../../components/input/inputlabel/InputLabel';
+import InputField from '../../components/input/inputfield/InputField';
 import SelectOption from '../../components/select/SelectOption';
 import Button from '../../components/button/Button';
 // component which asks the user for their profile information

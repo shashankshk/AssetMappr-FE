@@ -1,0 +1,4 @@
+.required_dob::after {
+    content: "*";
+    color: red;
+}

@@ -18,7 +18,7 @@ export default function App() {
       <Route path="signup" element={<Signup/>} />
       <Route path="login" element={<Login/>} />
       <Route path="signupcontinue" element={<Signupcontinue/>} />
-      <Route path="welcome3" element={<WelcomeOnSignupScreen/>} />
+      <Route path="onsignup" element={<WelcomeOnSignupScreen/>} />
       <Route path="disclaimer" element={<DisclaimerScreen/>} />
       <Route path="profile" element={<ProfileInfoScreen/>} />
       <Route path="home" element={<HomeScreen/>} />

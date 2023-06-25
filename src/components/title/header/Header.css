@@ -1,0 +1,91 @@
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.welcome_title {
+    margin-top: 2rem;
+    color: black;
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+.welcome3_title {
+    color: slateblue;
+    font-size: 3vw;
+    margin-top: 0;
+}
+
+.signup_header, .login_header {
+    color: black;
+    text-align: center;
+}
+
+.subheader {
+    color: slateblue;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.subheader {
+    color: slateblue;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.profile_info_title, .header {
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+@media (max-width:880px) {
+    .welcome3_title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px) {
+    .signup_header {
+        display: none;
+    }
+    .welcome3_title{
+        margin-bottom: 0;
+    }
+    .profile_info_title{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:331px) {
+    .welcome3_title {
+        font-size: 2rem;
+     }
+}
+
+@media (max-width:321px) {
+    .welcome_title, .signup_header, .subheader, .login_header {
+        font-size: 2.5rem;
+    }
+    .header {
+        font-size: 1.5rem;
+    }
+    .profile_info_title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:300px){
+    .welcome_title, .signup_header, .subheader, .login_header {
+        font-size: 2rem;
+    }
+    .header{
+        font-size: 1.5rem;
+    }
+}

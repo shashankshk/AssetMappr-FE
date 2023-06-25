@@ -3,10 +3,10 @@ import Card from '../../components/card/Card';
 import './Signup.css';
 import backgroundImage from '../../images/background_image.png';
 import { useNavigate } from 'react-router-dom';
-import InputField from '../../components/input/InputField';
+import InputField from '../../components/input/inputfield/InputField';
 import ErrorMsg from '../../components/message/ErrorMsg';
 import Background from '../../components/background/Background';
-import Header from '../../components/title/Header';
+import Header from '../../components/title/header/Header';
 import Button from '../../components/button/Button';
 // TODO: these imports to be used during API call
 // import axios from "../../utils/api/appservice";
@@ -78,7 +78,7 @@ const Signup = () => {
             navigate('/signupcontinue');
         }
         else {
-            navigate('/welcome3');
+            navigate('/onsignup');
         }
     }
 

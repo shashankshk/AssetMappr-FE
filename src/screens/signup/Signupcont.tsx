@@ -1,11 +1,11 @@
 import { useRef, useState, useEffect } from 'react';
 import Card from '../../components/card/Card';
-import './Signupcont.css';
+import './Signup.css';
 import backgroundImage from '../../images/background_image.png';
 import { useNavigate } from 'react-router-dom';
 import Background from '../../components/background/Background';
-import Header from '../../components/title/Header';
-import InputField from '../../components/input/InputField';
+import Header from '../../components/title/header/Header';
+import InputField from '../../components/input/inputfield/InputField';
 import ErrorMsg from '../../components/message/ErrorMsg';
 import Button from '../../components/button/Button';
 // Component which prompts user to enter password during signup 
@@ -55,7 +55,7 @@ const Signupcontinue = () => {
               setErrMsg('Registration failed');
           }
       }*/
-      navigate('/welcome3');
+      navigate('/onsignup');
   }
 
 
@@ -68,7 +68,7 @@ const Signupcontinue = () => {
         return (
         <Background classname='App' backgroundImage={imageUrl}>
             <Card>
-                <Header classname='signupcontinue_header' content='Asset Mappr'/>
+                <Header classname='signup_header' content='Asset Mappr'/>
                 <Header classname='subheader' content='Sign Up'/>
                 <form onSubmit={next}>
                 <div className="input_container">

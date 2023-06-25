@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './ShortLink.css';
 interface Props{
     href:string;
     classname: string;

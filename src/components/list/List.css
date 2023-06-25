@@ -1,0 +1,5 @@
+ul.disclaimer_list {
+    list-style-type: disc;
+    color: black;
+    margin-left: 1rem;
+}

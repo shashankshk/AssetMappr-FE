@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import backgroundImage from '../../images/background_image.png';
 import List from '../../components/list/List';
 import Background from '../../components/background/Background';
-import Header from '../../components/title/Header';
+import Header from '../../components/title/header/Header';
 import Button from '../../components/button/Button';
+import Subheader from '../../components/title/subheader/Subheader';
 // The component which contains the disclaimer
 // TODO: button at bottom of screen for mobile browser
 const DisclaimerScreen = () => {
@@ -40,12 +41,10 @@ const DisclaimerScreen = () => {
         navigate('/profile');
     }
     return (
-    <Background classname='disclaimer_app' backgroundImage={imageUrl}>
+    <Background classname='App' backgroundImage={imageUrl}>
         <Card>
             <Header classname='profile_info_title' content='Profile Information'/>
-            <p className="disclaimer_subtitle">
-                Your privacy and security are our top priorities. As you begin using the app, please keep in mind that the following questions are designed to help community planners identify the unique characteristics of participants. This information is crucial for planning purposes and grant applications. 
-            </p>
+            <Subheader classname='disclaimer_subtitle' content='Your privacy and security are our top priorities. As you begin using the app, please keep in mind that the following questions are designed to help community planners identify the unique characteristics of participants. This information is crucial for planning purposes and grant applications.'/>
             <p className="disclaimer_content">
                 <span className="content_title">Before we begin</span> <br></br>
                 We want to assure you that: <br></br><br></br>
