@@ -1,8 +1,8 @@
 import React, { FC, FormEvent } from 'react'
-import Button from '../../components/button/Button'
-import InputField from '../../components/input/inputfield/InputField'
-import ErrorMsg from '../../components/message/ErrorMsg'
-import Header from '../../components/title/header/Header'
+import Button from '../../../components/button/Button'
+import InputField from '../../../components/input/inputfield/InputField'
+import ErrorMsg from '../../../components/message/ErrorMsg'
+import Header from '../../../components/title/header/Header'
 
 type ParentProps = {
   baseProps: any

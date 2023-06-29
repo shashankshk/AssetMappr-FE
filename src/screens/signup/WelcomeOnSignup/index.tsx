@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
-import Icon from '../../components/icon/Icon'
-import Header from '../../components/title/header/Header'
-import Button from '../../components/button/Button'
+import Icon from '../../../components/icon/Icon'
+import Header from '../../../components/title/header/Header'
+import Button from '../../../components/button/Button'
 // component showing the welcome message to users after signing up
 // TODO: for mobile browser view, button needs to be at bottom of screen
 const WelcomeOnSignupScreen = () => {

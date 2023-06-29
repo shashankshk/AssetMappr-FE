@@ -9,9 +9,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "outDir": "dist",
     "moduleResolution": "node",
-    "lib": [
-      "dom.iterable", "dom", "es5", "es6"
-    ]
   },
   "include": ["**/*.ts", "**/*.tsx"]
 }
