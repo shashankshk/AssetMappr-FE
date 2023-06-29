@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "jsx": "react-jsx" /* IMPORTANT! - this allows our JSX to be transpiled correctly */,
     "target": "es6" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
@@ -7,8 +8,9 @@
     "forceConsistentCasingInFileNames": false /* Ensure that casing is correct in imports. */,
     "strict": true /* Enable all strict type-checking options. */,
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
-    "outDir": "dist",
+    "outDir": "./dist/",
     "moduleResolution": "node",
+    "lib": ["dom", "dom.iterable", "scripthost", "es6", "es2017", "esnext.array"],
   },
-  "include": ["src", "**/*.ts", "**/*.tsx"]
+  "include": ["./src/**/*"]
 }
