@@ -38,6 +38,7 @@ const config: Configuration = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   plugins: [
     new CopyWebpackPlugin({
@@ -45,7 +46,8 @@ const config: Configuration = {
     }),
   ],
   devServer: {
-    port: 3000
+    port: 3000,
+    historyApiFallback: true,
   }
 };
 
