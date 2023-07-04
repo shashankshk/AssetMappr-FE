@@ -31,7 +31,7 @@ const WelcomeOnSignupScreen = () => {
     }
     return (
         <Background classname='App' backgroundImage={imageUrl}>
-        <Card>
+        <Card classname='card'>
             <Icon classname='checkicon' iconname={faCircleCheck}></Icon>
             <Header classname='welcome3_title' content='Welcome to our community planning app!'/>
             <Button type="submit" value="Continue" className="continue2_button" onClick={next}>Continue</Button>

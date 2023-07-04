@@ -4,7 +4,7 @@ import './Signup.css';
 import backgroundImage from '../../images/background_image.png';
 import { useNavigate } from 'react-router-dom';
 import InputField from '../../components/input/inputfield/InputField';
-import ErrorMsg from '../../components/message/ErrorMsg';
+import ErrorMsg from '../../components/content/ErrorMsg';
 import Background from '../../components/background/Background';
 import Header from '../../components/title/header/Header';
 import Button from '../../components/button/Button';
@@ -84,7 +84,7 @@ const Signup = () => {
 
         return (
         <Background classname='App' backgroundImage={imageUrl}>
-            <Card>
+            <Card classname='card'>
                 <Header classname='signup_header' content='Asset Mappr'/>
                 <Header classname='subheader' content='Sign Up'/>
                 <form onSubmit = {next}>

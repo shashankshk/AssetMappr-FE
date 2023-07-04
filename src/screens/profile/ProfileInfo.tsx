@@ -58,7 +58,7 @@ const ProfileInfoScreen = () => {
     
     return (
         <Background classname='App' backgroundImage={imageUrl}>
-            <Card>
+            <Card classname='card'>
                 <Header classname='header' content='Profile Information'/>
                 <form onSubmit={handleProfileSubmit}>
                 <div className="profile_container">

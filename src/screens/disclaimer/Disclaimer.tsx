@@ -42,7 +42,7 @@ const DisclaimerScreen = () => {
     }
     return (
     <Background classname='App' backgroundImage={imageUrl}>
-        <Card>
+        <Card classname='card'>
             <Header classname='profile_info_title' content='Profile Information'/>
             <Subheader classname='disclaimer_subtitle' content='Your privacy and security are our top priorities. As you begin using the app, please keep in mind that the following questions are designed to help community planners identify the unique characteristics of participants. This information is crucial for planning purposes and grant applications.'/>
             <p className="disclaimer_content">

@@ -34,7 +34,7 @@ const Login = () => {
 
         return (
             <Background classname='App' backgroundImage={imageUrl}>
-            <Card>
+            <Card classname='card'>
                 <Header classname='login_header' content='Asset Mappr'/>
                 <Header classname='subheader' content='Login'/>
                 <form onSubmit={handleLogin}>

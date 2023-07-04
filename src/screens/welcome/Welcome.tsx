@@ -40,7 +40,7 @@ const Welcome = () => {
     
     return (
         <Background classname='App' backgroundImage={imageUrl}>
-        <Card>
+        <Card classname='card'>
             <Header classname='welcome_title' content='Welcome to Asset Mappr!'/>
             <Subheader classname='subtitle' content='Select your community to get started'/>
             <form>
