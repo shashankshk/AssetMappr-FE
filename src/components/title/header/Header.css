@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 40px;
@@ -45,6 +48,93 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.frame-1-header{
+    color: #2B2C33;
+    font-size: 4rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+
+.frame-2-header{
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.frame-3-header{
+    color: #191A15;
+    font-size: 2.5rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+
+.icon-list-header{
+    color: #000;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0.4rem;
+}
+.frame-4-header{
+    color: #191A15;
+    font-size: 3rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+.frame-4-icon-list-header{
+    color: #191A15;
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    margin-bottom: 1rem;
+}
+.frame-5-header{
+    color: #191A15;
+    font-size: 2.5rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+.current-members-header{
+    color: #FF3D00;
+    font-size: 1.125rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    margin-left: 2rem;
+}
+.frame-footer-header{
+    color: #FFF;
+    font-size: 2.5rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
 @media (max-width:880px) {
     .welcome3_title {
         font-size: 2.5rem;
@@ -63,6 +153,83 @@ h1 {
     }
 }
 
+@media (max-width: 430px) {
+    .frame-1-header{
+        color: #2B2C33;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .frame-2-header{
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .frame-3-header{
+        color: #191A15;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .icon-list-header{
+        color: #000;
+        font-size: 1.25rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .frame-4-header{
+        color: #191A15;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .frame-5-header{
+        color: #191A15;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .current-members-header{
+        color: #FF3D00;
+        text-align: center;
+        font-size: 0.75rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;
+        margin-left: 0;
+    }
+    .frame-footer-header{
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
 @media (max-width:331px) {
     .welcome3_title {
         font-size: 2rem;
