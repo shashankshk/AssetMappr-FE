@@ -1,0 +1,92 @@
+.landingmapvector{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 2.5rem;
+    position: relative;
+}
+.assetvector{
+    width: 4.48356rem;
+    height: 4.55131rem;
+    position: absolute;
+    right: 28rem;
+    top: 6rem;
+}
+.monhospitalvector{
+    width: 13.41325rem;
+    height: 4.727rem;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+}
+.plusvector{
+    width: 2.989rem;
+    height: 3.03419rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 7.5rem;
+}
+.assetconcernboxvector{
+    width: 15.28144rem;
+    height: 7.68538rem;
+    position: absolute;
+    top: 12rem;
+    right: 0.04rem;   
+}
+.dickaquavector{
+    width: 14.5715rem;
+    height: 10.63994rem;
+    position: absolute;
+    top: 15rem;
+    right: 20rem;
+}
+.surveysubmitvector{
+    width: 15.16931rem;
+    height: 1.93431rem;
+    position: absolute;
+    top: 21rem;
+    right: 0.04rem;
+}
+.monvalley{
+    width: 8.0625rem;
+    height: 4.5rem;
+    margin-right: 2rem;
+}
+.citylogo{
+    width: 13.375rem;
+    height: 4.625rem;
+}
+.frame-1-image,.frame-4-image{
+    width: 30.8125rem;
+    height: 23.75rem;
+    margin-left: 4rem;
+}
+.member-image{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+@media (max-width:430px) {
+    .frame-1-image{
+        margin-left: 0;
+        width: 22.625rem;
+        height: 14.72631rem;   
+    }
+    .monvalley{
+        width: 4.75rem;
+        height: 2.625rem;   
+        
+    }
+    .citylogo{
+        width: 7.6875rem;
+        height: 2.625rem;
+    }
+    .frame-4-image{
+        width: 22.625rem;
+        height: 15.875rem;
+        margin-left: 0;
+    }
+    .member-image{
+        width: 6rem;
+        height: 6rem;
+    }
+}

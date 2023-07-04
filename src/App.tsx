@@ -9,11 +9,17 @@ import DisclaimerScreen from './screens/disclaimer/Disclaimer';
 import ProfileInfoScreen from './screens/profile/ProfileInfo';
 import Login from './screens/login/Login';
 import HomeScreen from './screens/home/Home';
+// import LandingPage from './components/section/LandingPageOld';
+import { Desktop } from './components/section/LandingPageSample';
+import LandingPage from './screens/landingpage/LandingPage';
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Welcome/>} />
+      {/* TODO: After finishing the routing, uncomment the below line to view landing page on opening application
+       <Route path="/" element={<LandingPage/>} /> */}
+       
+      <Route path="/" element={<Welcome/>} /> 
       <Route path="welcomecont" element={<WelcomeScreen/>} />
       <Route path="signup" element={<Signup/>} />
       <Route path="login" element={<Login/>} />
