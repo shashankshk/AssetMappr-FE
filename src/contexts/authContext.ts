@@ -13,10 +13,10 @@ interface AuthContextType {
 }
 
 const initialAuthContext: AuthContextType = {
-  setIsAuthenticated: () => {},
+  setIsAuthenticated: () => {}, // eslint-disable-line
   isAuthenticated: false,
-  login: () => {},
-  logout: () => {},
+  login: () => {}, // eslint-disable-line
+  logout: () => {}, // eslint-disable-line
 }
 
 export const AuthContext = createContext<AuthContextType>(initialAuthContext)

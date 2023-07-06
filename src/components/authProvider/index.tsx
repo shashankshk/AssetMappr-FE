@@ -1,6 +1,5 @@
-import React, { createContext, useState } from 'react'
+import React, { useState } from 'react'
 import { AuthContext, LoginData } from '../../contexts/authContext'
-import api from '../../utils/api/apiservice'
 import { ACCESS_TOKEN, BASE_URL, REFRESH_TOKEN } from '../../utils/constants'
 import Cookies from 'js-cookie'
 import { useNavigate } from 'react-router-dom'
@@ -23,6 +22,7 @@ export const AuthProvider: React.FC<ParentProps> = ({ children }) => {
       setIsAuthenticated(true)
       navigate('/home')
     } catch (err) {
+      console.log(err)
       throw err
     }
   }

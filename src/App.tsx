@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import LoginSignup from './screens/LoginSignup'
-import Signup from './screens/Signup'
+import Signup from './screens/signup'
 import Login from './screens/Login'
 import HomeScreen from './screens/Home'
 import { AuthProvider } from './components/authProvider'
