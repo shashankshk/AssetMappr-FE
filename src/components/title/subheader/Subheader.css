@@ -1,0 +1,33 @@
+.welcome2_subtitle, .subtitle, .disclaimer_subtitle {
+    margin-top: 1rem;
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+.disclaimer_subtitle {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width:600px) {
+    .welcome2_subtitle, .subtitle, .disclaimer_subtitle{
+        font-size: 1rem;
+    }
+    .welcome2_subtitle {
+        margin-top: 1rem;
+    }
+    .subtitle, .disclaimer_subtitle{
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width:300px) {
+    .welcome2_subtitle, .subtitle {
+       font-size: 0.85rem;
+    }
+}

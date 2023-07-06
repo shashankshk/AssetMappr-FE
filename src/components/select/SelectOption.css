@@ -1,0 +1,28 @@
+select {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    width: 95%;
+    margin: 3rem auto 1rem auto;
+    padding: 0.5rem;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.select_ethnicity, .select_race, .select_sex {
+    margin: 0.5rem auto 1rem auto;
+    border: 1px solid black;
+    font-size: 15px;
+    width: 95%;
+}
+
+@media (max-width:450px) {
+    select {
+        width: 100%;
+    }
+}
+@media (max-width:300px) {
+    select {
+        font-size: 15px;
+     }
+}

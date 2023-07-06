@@ -1,0 +1,72 @@
+.welcome_continue_button, .signup_button, .login_button, .signup2_button, .loginscreen_button, .continue2_button, .accept_button, .profile_continue_button {
+    display: block;
+    margin: 3rem auto 2rem auto;
+    margin-top: 0;
+    width: 95%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    background-color: slateblue;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.signup_button, .login_button, .signup2_button, .loginscreen_button, .continue2_button{
+    margin: 3rem auto 1rem auto;
+}
+
+.signup_button {
+    margin-bottom: 0;
+}
+.login_button {
+    margin-top: 0.95rem;
+    background-color: white;
+    color: black;
+    border: 0.25px solid black;
+    margin-bottom: 2rem;
+}
+
+.signup2_button, .loginscreen_button{
+    width: 90%;
+    margin-top: 1rem;
+    padding: 0.75rem 0.75rem;
+    color: white;
+    border: 2px solid transparent;
+}
+.signup2_button:hover, .loginscreen_button:hover {
+    border: 2px solid slateblue;
+    background-color: black;
+}
+.continue2_button {
+    margin-top: 5rem;
+    background-color: slateblue;
+}
+.accept_button {
+    margin: 1rem auto 1rem auto;
+    width: 95%;
+}
+.profile_continue_button {
+    margin: 0 auto 1rem auto;
+}
+.disabled {
+    opacity: 0.5; /* Example: reduce opacity to visually indicate the button is disabled */
+    pointer-events: none; /* Disable pointer events to prevent clicks */
+    /* Add any other desired styles */
+}
+
+@media (max-width:450px){
+    .welcome_continue_button, .signup_button, .login_button, .signup2_button, .loginscreen_button, .accept_button, .profile_continue_button {
+        width: 100% ;
+    }
+    .signup2_button {
+        margin-top: 2rem;
+    }
+    .continue2_button{
+        width: 90%;
+        margin-top: 15rem;
+        text-align: center;
+    }
+}

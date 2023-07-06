@@ -1,0 +1,6 @@
+.profile_container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
