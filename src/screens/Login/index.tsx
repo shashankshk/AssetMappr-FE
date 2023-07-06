@@ -1,16 +1,22 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useContext } from 'react'
 import Card from '../../components/card/Card'
 import backgroundImage from '../../images/background_image.png'
 import Background from '../../components/background/Background'
 import Header from '../../components/title/header/Header'
 import InputField from '../../components/input/inputfield/InputField'
 import Button from '../../components/button/Button'
-import axiosInstance from '../../utils/api/apiservice'
+import api from '../../utils/api/apiservice'
+import Cookies from 'js-cookie'
+import { ACCESS_TOKEN, BASE_URL, REFRESH_TOKEN } from '../../utils/constants'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import { AuthContext } from '../../contexts/authContext'
 // Component handling the login functionality for the user
 const Login = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const { login } = useContext(AuthContext)
   const imageUrl = windowWidth >= 480 ? backgroundImage : 'none'
-
+  const navigate = useNavigate()
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth)
@@ -31,15 +37,18 @@ const Login = () => {
   const handleLogin = async (event: any) => {
     // axios api
     event.preventDefault()
-    try {
-      const response = await axiosInstance.post('/user/login', {
-        email: user,
-        password: password,
-      })
-      console.log(response)
-    } catch (err) {
-      console.log(err)
-    }
+    login({ email: user, password })
+    // try {
+    //   const response = await axios.post(`${BASE_URL}/user/login`, {
+    //     email: user,
+    //     password: password,
+    //   })
+    //   Cookies.set(ACCESS_TOKEN, response.data.access_token)
+    //   Cookies.set(REFRESH_TOKEN, response.data.refresh_token)
+    //   navigate('/home')
+    // } catch (err) {
+    //   console.log(err)
+    // }
   }
 
   return (
