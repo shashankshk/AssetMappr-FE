@@ -59,6 +59,7 @@ api.interceptors.response.use(
         return api(originalRequest)
       } catch (error) {
         // Handle refresh token failure or other errors
+        console.log(error)
         throw error
       }
     }
