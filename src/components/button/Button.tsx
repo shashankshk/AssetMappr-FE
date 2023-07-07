@@ -6,7 +6,7 @@ interface Props {
   color?: string;
   children?: React.ReactNode;
   height?: string;
-  onClick?: () => void;
+  onClick?: React.FormEventHandler;
   radius?: string
   width?: string;
   type: 'button' | 'submit' | 'reset';
