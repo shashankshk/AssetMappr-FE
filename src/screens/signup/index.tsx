@@ -108,7 +108,7 @@ const Signup = () => {
 
   return (
     <Background classname='App' backgroundImage={imageUrl}>
-      <Card>
+      <Card classname='card'>
         <Routes>
           <Route
             path=''
