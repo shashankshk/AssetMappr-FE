@@ -38,17 +38,6 @@ const Login = () => {
     // axios api
     event.preventDefault()
     login({ email: user, password })
-    // try {
-    //   const response = await axios.post(`${BASE_URL}/user/login`, {
-    //     email: user,
-    //     password: password,
-    //   })
-    //   Cookies.set(ACCESS_TOKEN, response.data.access_token)
-    //   Cookies.set(REFRESH_TOKEN, response.data.refresh_token)
-    //   navigate('/home')
-    // } catch (err) {
-    //   console.log(err)
-    // }
   }
 
   return (

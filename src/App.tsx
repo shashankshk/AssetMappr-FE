@@ -21,11 +21,9 @@ export default function App() {
           }
         />
         <Route path='/' element={<LandingPage />} />
-        {/* <ProtectedRoute component={<HomeScreen />} /> */}
         <Route path='/loginSignup' element={<LoginSignup />} />
         <Route path='/signup/*' element={<Signup />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/home' element={<HomeScreen />} />
       </Routes>
     </AuthProvider>
   )

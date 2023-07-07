@@ -43,7 +43,7 @@ api.interceptors.response.use(
 
       try {
         // Attempt to refresh the access token
-        const response = await api.post('/user/refresh-token/', {
+        const response = await axios.post('/user/refresh-token/', {
           refres_token: Cookies.get(REFRESH_TOKEN),
         })
 
