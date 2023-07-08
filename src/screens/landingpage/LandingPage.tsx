@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import './LandingPage.css'
 import Background from '../../components/background/Background'
