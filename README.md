@@ -3,6 +3,7 @@
 
 ## Deploy using GitHub Actions
 ### Steps
+**Development**
 
 1. Launch a t2.micro instance. (Create new of use existing key - .pem file)
 2. Grant HTTP inbound access permission to 0.0.0.0/0 
