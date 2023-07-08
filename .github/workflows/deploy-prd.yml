@@ -1,4 +1,4 @@
-name: Production - Deploy to EC2
+name: Deploy FE to EC2 - Production
 
 on:
   push:
