@@ -45,7 +45,7 @@ jobs:
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: ${{ vars.ECR_REPO }}
-          IMAGE_TAG: "FE-DEV-${{ steps.vars.outputs.sha_short }}"
+          IMAGE_TAG: "FE-PRD-${{ steps.vars.outputs.sha_short }}"
         run: |
           cd simple-app          
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
@@ -55,7 +55,7 @@ jobs:
       # TODO: Find a way to authenticate instance to ecr. Or use ECS
       - name: Deploy container to Amazon EC2
         env:
-          CONTAINER: "FE-DEV-CONTAINER"
+          CONTAINER: "FE-PRD-CONTAINER"
           IMAGE: ${{ steps.build-image.outputs.image }}
           PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY  }}
           HOSTNAME : ${{ secrets.AWS_EC2_HOST  }}
