@@ -1,0 +1,160 @@
+.welcome_continue_button {
+    @extend %base-button;
+    @include dimesions-for-phone-only(100%);
+}
+
+.signup_button {
+    @extend %base-button;
+    margin: 3rem auto 0 auto;
+    @include dimesions-for-phone-only(100%);
+}
+
+.login_button {
+    @extend %base-button;
+    margin: 0.95rem auto 2rem auto;
+    background-color: white;
+    color: black;
+    border: 0.25px solid black;
+    @include dimesions-for-phone-only(100%);
+}
+
+.signup2_button {
+    @extend %base-button;
+    margin: 1rem auto 1rem auto;
+    width: 90%;
+    padding: $button-padding;
+    color: white;
+    border: 2px solid transparent;
+
+    &:hover {
+        @include hover-effect;
+    }
+
+    @include dimesions-for-phone-only(100%) {
+        margin-top: 2rem;
+    }
+}
+
+.loginscreen_button {
+    @extend %base-button;
+    padding: $button-padding;
+    border: $button-border;
+    margin: 1rem auto 1rem auto;
+    width: 90%;
+    color: white;
+
+    &:hover {
+        @include hover-effect;
+    }
+
+    @include dimesions-for-phone-only(100%);  
+}
+
+.continue2_button {
+    @extend %base-button;
+    margin: 5rem auto 1rem auto;
+
+    @include dimesions-for-phone-only(90%) {
+        margin-top: 15rem;
+        text-align: center;
+    }
+}
+
+.accept_button {
+    @extend %base-button;
+    margin: 1rem auto 1rem auto;
+    width: 95%;
+
+    @include dimesions-for-phone-only(100%);
+}
+
+.profile_continue_button {
+    @extend %base-button;
+    margin: 0 auto 1rem auto;
+
+    @include dimesions-for-phone-only(100%);
+}
+
+.disabled {
+   @include disable-button;
+}
+
+.user-login{
+    @extend %base-landing-button;
+    border: 1px solid black;
+    color:  #FFF;
+    text-align: center;
+    padding: 0.1rem;
+    width: 7rem;
+    margin-top: 0.5rem;
+}
+
+.user-signup{
+    @extend %base-landing-button;
+    color: #000;
+    text-align: center;
+    border: none;
+    background-color: white;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+
+    @include dimesions-for-phone-only(100%) {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            transition: box-shadow 0.3s ease-in-out;
+            width: 100%;
+            margin-right: 0;
+
+        &:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+.frame-1-button{
+    @extend %base-landing-button;
+    padding: 0.5rem;
+    color:  #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    width: 17.5rem;
+
+    @include dimesions-for-phone-only(17.5rem) {
+        justify-self: center;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+.frame-2-button{
+    @extend %base-landing-button;
+    width: 25.625rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color:  #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    align-self: center;
+
+    @include dimesions-for-phone-only(19.5rem) {
+        height: 3.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.submit-button{
+    @extend %base-landing-button;
+    width: 25.625rem;
+    height: 3.5rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    align-self: center;
+
+    @include dimesions-for-phone-only(19.5rem) {
+        height: 3.5rem;
+        margin-top: 0.5rem;
+    }
+}

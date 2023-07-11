@@ -1,7 +1,6 @@
 import Card from '../../../components/card/Card'
 import { useState, useEffect } from 'react'
-import './ProfileInfo.css'
-import backgroundImage from '../../images/background_image.png'
+import backgroundImage from '../../assets/images/background_image.png'
 import { useNavigate } from 'react-router-dom'
 import Header from '../../../components/title/header/Header'
 import InputLabel from '../../../components/input/inputlabel/InputLabel'

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+%base-button{
+    display: block;
+    margin: 3rem auto 2rem auto;
+    margin-top: 0;
+    width: 95%;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    background-color: slateblue;
+    color: white;
+    border: 2px solid transparent;
+}
+
+%base-landing-button{
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.02375rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: #5E47E0;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Description.css';
+
 interface Props{
   classname: string | undefined;
   content: string | undefined;

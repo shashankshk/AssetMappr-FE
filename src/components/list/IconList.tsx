@@ -2,9 +2,7 @@ import React from 'react'
 import Icon from '../icon/Icon'
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import Header from '../title/header/Header';
-import Card from '../card/Card';
 import Description from '../content/Description';
-import './IconList.css';
 
 interface Props{
     iconProps: IconProp;

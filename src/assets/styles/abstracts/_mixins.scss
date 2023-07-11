@@ -1,0 +1,16 @@
+@mixin hover-effect{
+    border: 2px solid slateblue;
+    background-color: black;
+}
+
+@mixin disable-button{
+    opacity: 0.5; /* Example: reduce opacity to visually indicate the button is disabled */
+    pointer-events: none; /* Disable pointer events to prevent clicks */
+}
+
+@mixin dimesions-for-phone-only($width) {
+    @media (max-width:450px) {
+        width: $width;
+        @content;
+    }
+}

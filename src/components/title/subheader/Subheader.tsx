@@ -1,5 +1,5 @@
 import React from 'react';
-import './Subheader.css';
+
 interface Props{
     classname: string;
     content: string;

@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from '../image/Image';
-import './Ellipse.css';
 
 interface Props{
     classname: string;

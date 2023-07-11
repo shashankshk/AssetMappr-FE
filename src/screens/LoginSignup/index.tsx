@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import backgroundImage from '../../images/background_image.png'
+import backgroundImage from '../../assets/images/background_image.png'
 import Card from '../../components/card/Card'
 import Background from '../../components/background/Background'
 import Button from '../../components/button/Button'

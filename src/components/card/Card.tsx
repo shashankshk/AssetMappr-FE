@@ -1,4 +1,3 @@
-import './Card.css';
 import PropTypes from 'prop-types';
 
 /* Implementation of the card component which will be displayed on the web browser.

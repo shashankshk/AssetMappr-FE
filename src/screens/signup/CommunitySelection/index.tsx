@@ -1,5 +1,4 @@
 import { useState, useEffect, FC, Dispatch, SetStateAction } from 'react'
-import './CommunitySelection.css'
 import { useNavigate } from 'react-router-dom'
 import Button from '../../../components/button/Button'
 import SelectOption from '../../../components/select/SelectOption'

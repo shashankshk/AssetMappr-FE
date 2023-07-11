@@ -1,5 +1,5 @@
 import React from 'react';
-import './InputLabel.css';
+
 interface Props{
     htmlfor: string;
     classname?: string;
