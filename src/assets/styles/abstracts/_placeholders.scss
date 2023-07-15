@@ -28,3 +28,29 @@
     cursor: pointer;
     background: #5E47E0;
 }
+%base-frame{
+    display: flex;
+    width: 100vw;
+    padding: 3.5rem;
+    justify-content: space-between;
+    flex-direction: row;
+}
+%base-frame-phone{
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+%base-frame-left{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+}
+%base-frame-right{
+    width: 50vw;
+    margin-left: 1rem;
+    position: relative;
+    margin-right: 2rem;
+}

@@ -8,8 +8,8 @@ interface Props {
   onClick?: React.FormEventHandler;
   radius?: string
   width?: string;
-  type: 'button' | 'submit' | 'reset';
-  value: string;
+  type?: 'button' | 'submit' | 'reset';
+  value?: string;
   className: string;
   disabled?: boolean;
 }

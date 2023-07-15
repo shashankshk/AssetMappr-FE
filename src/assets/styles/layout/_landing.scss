@@ -1,0 +1,84 @@
+.frame{
+    @extend %base-frame;
+    @include frame-dimensions-for-phone-only;
+}
+
+.frame-left{
+   @extend %base-frame-left;
+   
+   @include frame-left-dimensions-for-phone-only;
+}
+
+.frame-right{
+    @extend %base-frame-right;
+
+    @include frame-right-dimensions-for-phone-only;
+}
+.frame-2{
+    @extend %base-frame;
+    background: #161C28;
+    margin-left: 0;
+
+    @include frame-dimensions-for-phone-only {
+        margin-left: 0;
+    }
+}
+.frame-left-2{
+    @extend %base-frame-left;
+    @include frame-left-dimensions-for-phone-only;
+}
+.frame-right-2{
+    width: 50vw;
+    margin-left: 5rem;
+
+    @include frame-right-dimensions-for-phone-only;
+}
+.frame-4{
+    @extend %base-frame;
+    background: #FBFBFB;
+    @include frame-dimensions-for-phone-only;
+}
+.frame-5{
+    @extend %base-frame;
+    @include frame-dimensions-for-phone-only;
+}
+.frame-left-5{
+    @extend %base-frame-left;
+    @include frame-left-dimensions-for-phone-only;
+}
+.frame-right-5{
+    margin-left: 5rem;
+    @include frame-right-dimensions-for-phone-only;
+}
+.frame-6{
+    @extend %base-frame;
+    background: #161C28;
+    margin-bottom: 0;
+    @include frame-dimensions-for-phone-only {
+        margin-bottom: 0;
+    }
+}
+.frame-left-6{
+    @extend %base-frame-left;
+    @include frame-left-dimensions-for-phone-only;
+}
+.frame-right-6{
+    width: 50vw;
+    margin-left: 5rem;
+    @include frame-right-dimensions-for-phone-only;
+}
+/*
+.frame, .frame-2, .frame-4, .frame-5,.frame-footer{
+    display: flex;
+    width: 100vw;
+    padding: 3.5rem;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.frame-left, .frame-2-left,.frame-2-left-logo, .frame-5-left, .frame-6-left{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    
+}*/

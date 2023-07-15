@@ -1,12 +1,16 @@
 .welcome_continue_button {
     @extend %base-button;
-    @include dimesions-for-phone-only(100%);
+    @include dimensions-for-phone-only{
+        width: 100%;
+    }
 }
 
 .signup_button {
     @extend %base-button;
     margin: 3rem auto 0 auto;
-    @include dimesions-for-phone-only(100%);
+    @include dimensions-for-phone-only{
+        width: 100%;
+    }
 }
 
 .login_button {
@@ -15,7 +19,9 @@
     background-color: white;
     color: black;
     border: 0.25px solid black;
-    @include dimesions-for-phone-only(100%);
+    @include dimensions-for-phone-only{
+        width: 100%;
+    }
 }
 
 .signup2_button {
@@ -30,7 +36,8 @@
         @include hover-effect;
     }
 
-    @include dimesions-for-phone-only(100%) {
+    @include dimensions-for-phone-only {
+        width: 100%;
         margin-top: 2rem;
     }
 }
@@ -47,14 +54,17 @@
         @include hover-effect;
     }
 
-    @include dimesions-for-phone-only(100%);  
+    @include dimensions-for-phone-only{
+        width: 100%;
+    }  
 }
 
 .continue2_button {
     @extend %base-button;
     margin: 5rem auto 1rem auto;
 
-    @include dimesions-for-phone-only(90%) {
+    @include dimensions-for-phone-only {
+        width: 90%;
         margin-top: 15rem;
         text-align: center;
     }
@@ -65,14 +75,18 @@
     margin: 1rem auto 1rem auto;
     width: 95%;
 
-    @include dimesions-for-phone-only(100%);
+    @include dimensions-for-phone-only{
+        width: 100%;
+    }
 }
 
 .profile_continue_button {
     @extend %base-button;
     margin: 0 auto 1rem auto;
 
-    @include dimesions-for-phone-only(100%);
+    @include dimensions-for-phone-only{
+        width: 100%;
+    }
 }
 
 .disabled {
@@ -98,7 +112,8 @@
     margin-right: 2rem;
     margin-top: 0.5rem;
 
-    @include dimesions-for-phone-only(100%) {
+    @include dimensions-for-phone-only {
+            width: 100%;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
             transition: box-shadow 0.3s ease-in-out;
             width: 100%;
@@ -119,7 +134,8 @@
     text-transform: uppercase;
     width: 17.5rem;
 
-    @include dimesions-for-phone-only(17.5rem) {
+    @include dimensions-for-phone-only {
+        width: 17.5rem;
         justify-self: center;
         font-size: 1rem;
         margin-left: 1rem;
@@ -137,7 +153,8 @@
     text-transform: uppercase;
     align-self: center;
 
-    @include dimesions-for-phone-only(19.5rem) {
+    @include dimensions-for-phone-only {
+        width: 19.5rem;
         height: 3.5rem;
         margin-bottom: 1rem;
     }
@@ -153,7 +170,8 @@
     text-transform: uppercase;
     align-self: center;
 
-    @include dimesions-for-phone-only(19.5rem) {
+    @include dimensions-for-phone-only {
+        width: 19.5rem;
         height: 3.5rem;
         margin-top: 0.5rem;
     }

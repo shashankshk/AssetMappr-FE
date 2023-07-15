@@ -6,7 +6,7 @@ interface Props{
     content: Item[]
 }
 
-interface Item{
+export interface Item{
     key:number
     data:string
 }

@@ -34,6 +34,17 @@ p {
     line-height: 1.875rem;
     margin-bottom: 1.25rem;
 }
+
+.frame-3-subheader{
+    color: #FF3D00;
+    font-size: 1.125rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
 @media (max-width:600px) {
     .welcome2_subtitle, .subtitle, .disclaimer_subtitle{
         font-size: 1rem;

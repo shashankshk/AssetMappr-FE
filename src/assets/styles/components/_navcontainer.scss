@@ -1,0 +1,39 @@
+.navcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 2rem 2rem 2rem;
+    
+    @include dimensions-for-phone-only {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.nav-options {
+    @include dimensions-for-phone-only {
+        display: none;
+        width: 100%;
+    }
+}
+.nav-buttons{
+    display: flex;
+    align-items: center;
+   
+    @include dimensions-for-phone-only {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.active-options{
+    @include dimensions-for-phone-only {
+        display: inline;
+    }
+}
+
+.active-buttons{
+    @include dimensions-for-phone-only {
+        display: flex;
+    }
+}

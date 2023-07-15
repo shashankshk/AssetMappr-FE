@@ -2,12 +2,14 @@
 
 @import "base/typography";
 
+@import "layout/landing";
+
 @import "components/background" , "components/button" , "components/card", "components/description",
 "components/errorMsg", "components/ellipse", "components/footer", "components/icon",
 "components/inputField", "components/inputLabel", "components/iconList", "components/list", "components/hamburger",
 "components/navbar", "components/selectOption", "components/shortLink", "components/header", "components/subheader",
-"components/image";
+"components/image", "components/navcontainer";
 
-@import "pages/landingPage", "pages/signup/signup", "pages/signup/communitySelection",
+@import  "pages/landing/features", "pages/landing/team","pages/signup/signup", "pages/signup/communitySelection",
 "pages/signup/disclaimer", "pages/signup/profileInfo"
 

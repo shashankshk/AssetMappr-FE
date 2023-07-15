@@ -1,0 +1,7 @@
+.frame-3-logos{
+    display: flex;
+    flex-direction: row;
+    @include dimensions-for-phone-only{
+        justify-content: center;
+    }
+}

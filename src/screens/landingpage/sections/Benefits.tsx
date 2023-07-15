@@ -1,0 +1,62 @@
+import React from 'react'
+import Frame from '../../../components/layouts/Frame'
+import Header from '../../../components/title/header/Header'
+import IconList from '../../../components/list/IconList'
+import {faCircleCheck} from '@fortawesome/free-solid-svg-icons'
+import Image from '../../../components/image/Image'
+import frame4Image from '../../../assets/images/frame-4-image.svg'
+
+const Benefits = () => {
+  return (
+    <Frame classname='-4'
+        leftchildren = {
+            <>
+            <Header classname='frame-4-header' content='The benefits of a digital platform'></Header>
+            <IconList
+                classname='icon-frame-4-header-display'
+                iconProps={{ classname: 'icon', iconname: faCircleCheck }}
+                headerProps={{
+                classname: 'frame-4-icon-list-header',
+                content: 'Transparency and open access to meaningful information',
+                }}
+                hasDescription={false}
+            />
+            <IconList
+                classname='icon-frame-4-header-display'
+                iconProps={{ classname: 'icon', iconname: faCircleCheck }}
+                headerProps={{
+                classname: 'frame-4-icon-list-header',
+                content: 'Participatory community planning across demographics',
+                }}
+                hasDescription={false}
+            />
+            <IconList
+                classname='icon-frame-4-header-display'
+                iconProps={{ classname: 'icon', iconname: faCircleCheck }}
+                headerProps={{
+                classname: 'frame-4-icon-list-header',
+                content: 'Access to granular, need-based data.',
+                }}
+                hasDescription={false}
+            />
+            <IconList
+                classname='icon-frame-4-header-display'
+                iconProps={{ classname: 'icon', iconname: faCircleCheck }}
+                headerProps={{
+                classname: 'frame-4-icon-list-header',
+                content: 'Data is stored digitally for easy access and utilization',
+                }}
+                hasDescription={false}
+            />
+            </>
+        }
+        rightchildren = {
+            <>
+            <Image classname='frame-4-image' imgname={frame4Image}></Image>
+            </>
+        }
+    />
+  )
+}
+
+export default Benefits
