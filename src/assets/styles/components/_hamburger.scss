@@ -5,20 +5,17 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 1.5rem;
+    height: 1rem;
+    @include dimensions-for-phone-only{
+        display: flex;
+    }
 }
 
 .bar{
-    height: 3px;
-    width: 100%;
+    height: 2.5px;
+    width: 90%;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 8px;
 
-}
-
-@media (max-width: 430px) {
-    .toggle-bar {
-        display: flex;
-    }
 }

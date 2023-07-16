@@ -38,16 +38,22 @@
     background: #FBFBFB;
     @include frame-dimensions-for-phone-only;
 }
+.frame-right-4{
+    @extend %base-frame-right;
+
+    @include frame-right-dimensions-for-phone-only;
+}
 .frame-5{
     @extend %base-frame;
     @include frame-dimensions-for-phone-only;
 }
 .frame-left-5{
     @extend %base-frame-left;
+    width: 55vw;
     @include frame-left-dimensions-for-phone-only;
 }
 .frame-right-5{
-    margin-left: 5rem;
+    margin-left: 3rem;
     @include frame-right-dimensions-for-phone-only;
 }
 .frame-6{
@@ -67,18 +73,3 @@
     margin-left: 5rem;
     @include frame-right-dimensions-for-phone-only;
 }
-/*
-.frame, .frame-2, .frame-4, .frame-5,.frame-footer{
-    display: flex;
-    width: 100vw;
-    padding: 3.5rem;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.frame-left, .frame-2-left,.frame-2-left-logo, .frame-5-left, .frame-6-left{
-    display: flex;
-    flex-direction: column;
-    width: 45vw;
-    
-}*/

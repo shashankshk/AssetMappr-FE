@@ -8,6 +8,20 @@
     pointer-events: none; /* Disable pointer events to prevent clicks */
 }
 
+@mixin placeholder-styles{
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::placeholder {
+      @content;
+    }
+}
+
+@mixin font-family($family-name) {
+    font-family: map-get($map: $font-families, $key: $family-name);
+}
+
 @mixin dimensions-for-phone-only() {
     @media (max-width:450px) {
         @content;
@@ -42,5 +56,11 @@
         margin-top: 2rem;
         margin-left: 0;
         @content;
+    }
+}
+
+@mixin styling-for-browser-size($max-width) {
+    @media(max-width: $max-width) {
+        @content
     }
 }

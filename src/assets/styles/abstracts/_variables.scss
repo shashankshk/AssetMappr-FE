@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 $font-family: 'Roboto', sans-serif;
 $common-margin: 3rem auto 1rem auto;
 $button-padding: 0.75rem 0.75rem;
 $button-border: 2px solid transparent;
+
+$font-families: (
+  primary: #{'Roboto', sans-serif},
+  secondary: #{'Nunito', sans-serif},
+  tertiary: #{'Inter', sans-serif}
+);

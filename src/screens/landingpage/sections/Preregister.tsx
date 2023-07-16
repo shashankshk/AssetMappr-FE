@@ -4,10 +4,11 @@ import Header from '../../../components/title/header/Header'
 import Description from '../../../components/content/Description'
 import InputField from '../../../components/input/inputfield/InputField'
 import Button from '../../../components/button/Button'
+import TextArea from '../../../components/input/textarea/TextArea'
 
 const Preregister = () => {
   return (
-    <Frame classname='-2'
+    <Frame id='preregister' classname='-2'
         leftchildren = {
             <>
             <Header classname='frame-2-header' content='Pre-register now!'></Header>
@@ -37,11 +38,12 @@ const Preregister = () => {
                 placeholder='Enter your email here'
                 className='frame-2-small-field'
                 ></InputField>
-                <InputField
-                type='text'
+                <TextArea classname='frame-textarea'
+                name='frame-2-textarea'
+                rows={12}
+                cols={50}
                 placeholder='Tell us about your role in the community and how you envision utilizing our app.'
-                className='frame-2-big-field'
-                ></InputField>
+                />
                 <Button type='button' value='Pre-register now!' className='frame-2-button'>
                 Pre-register now!
                 </Button>

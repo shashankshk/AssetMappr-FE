@@ -8,7 +8,7 @@ import frame4Image from '../../../assets/images/frame-4-image.svg'
 
 const Benefits = () => {
   return (
-    <Frame classname='-4'
+    <Frame id='benefits' classname='-4'
         leftchildren = {
             <>
             <Header classname='frame-4-header' content='The benefits of a digital platform'></Header>

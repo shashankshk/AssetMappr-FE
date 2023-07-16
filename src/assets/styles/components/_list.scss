@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 ul.disclaimer_list {
     list-style-type: disc;
     color: black;
@@ -9,13 +8,15 @@ ul.nav-options-list{
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    @include dimensions-for-phone-only{
+        flex-direction: column;
+    }
 }
 
 .nav-options-items {
     color: #000;
     text-align: center;
     font-size: 0.9rem;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
@@ -23,18 +24,18 @@ ul.nav-options-list{
     text-transform: capitalize;
     margin-left: 2rem;
     margin-top: 0.5rem;
-}
-
-@media (max-width: 430px) {
-    ul.nav-options-list {
-        flex-direction: column;
-    }
-    .nav-options-items {
+    @include font-family(primary);
+    @include dimensions-for-phone-only{
         margin-left: 0;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
         transition: box-shadow 0.3s ease-in-out;
+        &:hover{
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        }
     }
-    .nav-options-items:hover{
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
-    }
+}
+
+.a-list{
+    text-decoration: none;
+    color: #000;
 }

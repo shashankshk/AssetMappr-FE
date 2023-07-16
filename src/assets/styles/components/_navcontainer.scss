@@ -2,11 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0.5rem 2rem 2rem 2rem;
+    margin: 0.5rem 3.5rem 2rem 3.5rem;
     
     @include dimensions-for-phone-only {
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 }
 .nav-options {

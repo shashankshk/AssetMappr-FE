@@ -135,10 +135,10 @@
     width: 17.5rem;
 
     @include dimensions-for-phone-only {
-        width: 17.5rem;
-        justify-self: center;
+        width: 14.625rem;
         font-size: 1rem;
-        margin-left: 1rem;
+        align-self: center;
+        margin-bottom: 1.25rem;
     }
 }
 
@@ -169,7 +169,7 @@
     font-size: 1.125rem;
     text-transform: uppercase;
     align-self: center;
-
+    margin-top: 0.5rem;
     @include dimensions-for-phone-only {
         width: 19.5rem;
         height: 3.5rem;

@@ -1,0 +1,12 @@
+.frame-textarea{
+    @extend %big-textarea;
+    @include font-family(secondary);
+    @include placeholder-styles{
+        color: #A6A6A6;  
+    }
+    @include dimensions-for-phone-only{
+        width: 19.5rem;
+        height: 10.75rem;
+        align-self: center;
+    }
+}

@@ -80,6 +80,3 @@ const Login = () => {
 }
 
 export default Login
-
-// onChange={(e) => setUser(e.target.value)}
-// onChange={(e) => setPassword(e.target.value)}

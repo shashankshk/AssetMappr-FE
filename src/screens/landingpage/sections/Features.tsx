@@ -10,7 +10,7 @@ import { faMap,faClipboardList,faPieChart} from '@fortawesome/free-solid-svg-ico
 
 const Features = () => {
   return (
-    <Frame classname=''
+    <Frame id='features' classname=''
     leftchildren = {
         <>
         <Header

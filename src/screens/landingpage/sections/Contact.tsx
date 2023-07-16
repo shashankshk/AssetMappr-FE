@@ -5,10 +5,11 @@ import Description from '../../../components/content/Description'
 import Footer from '../../../components/footer/Footer'
 import InputField from '../../../components/input/inputfield/InputField'
 import Button from '../../../components/button/Button'
+import TextArea from '../../../components/input/textarea/TextArea'
 
 const Contact = () => {
   return (
-    <Frame classname='-6'
+    <Frame id='contact' classname='-6'
     leftchildren = {
         <>
             <Header classname='frame-footer-header' content='We’d love to hear from you!'></Header>
@@ -31,20 +32,21 @@ const Contact = () => {
               placeholder='Enter your email here'
               className='frame-6-field'
             ></InputField>
-            <InputField
-              type='text'
-              placeholder='Type in your message'
-              className='frame-6-big-field'
-            ></InputField>
-          </form>
+          <TextArea classname='frame-textarea'
+                name='frame-6-textarea'
+                rows={12}
+                cols={50}
+                placeholder='Type in your message'
+                />
           <Button type='button' value='Submit' className='submit-button'>
             SUBMIT
           </Button>
-        </div>
-        <Footer
+          </form>
+          <Footer
           classname='mobile-footer'
           content='© 2023 Asset Mappr. Copyright and rights reserved.'
         ></Footer>
+        </div>
         </>
     }
     />

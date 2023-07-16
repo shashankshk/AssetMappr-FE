@@ -9,6 +9,7 @@ interface Props{
     readonly?:boolean;
     wrap?:string;
     content?:string;
+    name?:string;
 }
 const TextArea:React.FC<Props> = ({
     classname,
@@ -18,10 +19,10 @@ const TextArea:React.FC<Props> = ({
     maxlength,
     readonly,
     wrap,
-    
+    name
 }) => {
   return (
-    <textarea className={classname} placeholder={placeholder} cols={cols} rows={rows} maxLength={maxlength} readOnly={readonly} wrap={wrap}></textarea>
+    <textarea className={classname} placeholder={placeholder} cols={cols} rows={rows} name={name} maxLength={maxlength} readOnly={readonly} wrap={wrap}></textarea>
   )
 }
 

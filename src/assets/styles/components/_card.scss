@@ -6,77 +6,27 @@
     margin: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
-
-/*TODO: to be updated for the landing page implementation*/
-.iconcard {
-  height: 2.5rem;
-  width: 3rem;
-  background: #FFF;
-  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.05);
-  padding: 2rem;
-  display: block;
-}
-@media (max-width:900px) {
-  .card{
-    width: 45vw;
-  }
-}
-
-@media (max-width:800px) {
-  .card{
-    width: 50vw;
-  }
-}
-
-@media (max-width:700px) {
-  .card{
-    width: 55vw;
-  }
-}
-
-@media (max-width:640px) {
-  .card{
-    width: 60vw;
-  }
-}
-
-@media (max-width:580px) {
-  .card{
-    width: 70vw;
-  }
-}
-
-
-@media (max-width:479px) {
-  .card{
+    @include styling-for-browser-size(900px) {
+      width: 45vw;
+    }
+    @include styling-for-browser-size(800px) {
+      width: 50vw;
+    }
+    @include styling-for-browser-size(700px) {
+      width: 55vw;
+    }
+    @include styling-for-browser-size(640px) {
+      width: 60vw;
+    }
+    @include styling-for-browser-size(580px) {
+      width: 70vw;
+    }
+    @include styling-for-browser-size(479px) {
       width: 85vw;
-      border-radius: 0;
-      padding: 2rem;
-      margin: 1rem;
       box-shadow: none;
-      text-align: center;
-  }
-}
-
-@media (max-width:380px), (max-width:420px) {
-  .card{
+    }
+    @include styling-for-browser-size(420px) {
       width: 100vw;
-      border-radius: 0;
-      padding: 2rem;
-      margin: 1rem;
       box-shadow: none;
-      text-align: center;
-  }
-}
-
-@media (max-width:365px) {
-  .card{
-      width: 100vw;
-      border-radius: 0;
-      padding: 2rem;
-      margin: 1rem;
-      box-shadow: none;
-      text-align: center;
-  }
+    }
 }
