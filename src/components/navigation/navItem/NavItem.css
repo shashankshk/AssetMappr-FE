@@ -1,0 +1,30 @@
+.nav_item_label {
+    color: #1E293B;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.home_ni, .asset_map_ni, .live_surveys_ni {
+    padding: 8px;
+    border-radius: 8px;
+    width: inherit;
+}
+
+.home_ni:focus,
+.asset_map_ni:focus,
+.live_surveys_ni:focus,
+.home_ni:active,
+.asset_map_ni:active,
+.live_surveys_ni:active {
+    background: rgba(94, 71, 224, 0.16);
+}
+
+.home_ni:hover,
+.asset_map_ni:hover,
+.live_surveys_ni:hover  {
+    background: rgba(94, 71, 224, 0.16);
+}

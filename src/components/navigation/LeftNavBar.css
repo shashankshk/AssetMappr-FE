@@ -1,0 +1,11 @@
+.dashboard_nb {
+    background-color: white;
+    height: 100vh;
+    min-width: 135px;
+    float: left;
+    padding: 1rem;
+}
+
+h2, h3 {
+    font-family: 'Nunito', sans-serif;
+}

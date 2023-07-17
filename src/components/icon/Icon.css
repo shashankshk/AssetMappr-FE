@@ -4,3 +4,10 @@
     font-size: xx-large;
     margin-bottom: 0;
 }
+
+.nav_item_icon {
+    text-align: center;
+    font-size: large;
+    margin: 0.5rem;
+    color: slateblue;
+}

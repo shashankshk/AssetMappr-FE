@@ -29,6 +29,17 @@
     margin-bottom: 2rem;
 }
 
+.logout_nav_button {
+    margin-top: 0.95rem;
+    background-color: transparent;
+    color: red;
+    margin-bottom: 1rem;
+    position: fixed;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    bottom: 0px;
+}
+
 .signup2_button, .loginscreen_button{
     width: 90%;
     margin-top: 1rem;
