@@ -10,6 +10,7 @@ import currentmember3 from '../../../assets/images/assetmappr_Brook.svg'
 import currentmember4 from '../../../assets/images/assetmappr_Srishti.svg'
 import currentmember5 from '../../../assets/images/assetmappr_Shashank.svg'
 import currentmember6 from '../../../assets/images/assetmappr_Niranjan.svg'
+import currentmember7 from '../../../assets/images/assetmappr_sharoni.svg'
 import pastmember1 from '../../../assets/images/assetmappr_Mihir.svg'
 import pastmember2 from '../../../assets/images/assetmappr_Michaela.svg'
 import pastmember3 from '../../../assets/images/assetmappr_Anna.svg'
@@ -89,7 +90,7 @@ const Team = () => {
               />
               <Ellipse
                 classname='member-image'
-                image={frame5Image}
+                image={currentmember7}
                 captions={[
                   { index: 1, text: 'Sharoni R Chowdhury' },
                   { index: 2, text: 'Computer Science' },

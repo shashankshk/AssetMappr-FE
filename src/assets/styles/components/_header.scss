@@ -100,7 +100,7 @@ h1 {
 .frame-1-header{
     @extend %landing-header-style;
     color: #2B2C33;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 1.25rem;
     @include dimensions-for-phone-only{
         text-align: center;
