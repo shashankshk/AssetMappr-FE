@@ -2,22 +2,24 @@ import React from 'react';
 import './Background.css';
 interface Props {
     classname: string;
-    backgroundImage: any;
+    backgroundImage?: any;
+    id?:string;
     children: React.ReactNode;
 }
 
 const Background:React.FC<Props> = ({
     classname,
     backgroundImage,
-    children
+    children,
+    id
 }) => {
     return (
-        <main className={classname} 
+        <div className={classname} id={id}  
               style={
                 {backgroundImage: `url(${backgroundImage})` }
                 }>
               {children}
-        </main>
+        </div>
     )
 };
 

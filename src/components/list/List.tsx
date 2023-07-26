@@ -3,6 +3,7 @@ import './List.css';
 
 interface Props{
     classname: string;
+    classnameli?:string;
     content: Item[]
 }
 
@@ -12,12 +13,13 @@ interface Item{
 }
 const List: React.FC<Props> = ({
     classname,
-    content
+    content,
+    classnameli
 }) => {
     return (
         <ul className={classname}>
             {content.map((item) => (
-                <li key={item.key}>{item.data}</li>
+                <li className={classnameli} key={item.key}>{item.data}</li>
             ))}
         </ul>
     )

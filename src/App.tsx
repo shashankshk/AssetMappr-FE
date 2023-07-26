@@ -6,6 +6,7 @@ import Login from './screens/Login'
 import HomeScreen from './screens/Home'
 import { AuthProvider } from './components/authProvider'
 import ProtectedRoute from './components/protectedRoute'
+import LandingPage from './screens/landingpage/LandingPage'
 
 export default function App() {
   return (
@@ -19,11 +20,10 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-        {/* <ProtectedRoute component={<HomeScreen />} /> */}
-        <Route path='/' element={<LoginSignup />} />
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/loginSignup' element={<LoginSignup />} />
         <Route path='/signup/*' element={<Signup />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/home' element={<HomeScreen />} />
       </Routes>
     </AuthProvider>
   )

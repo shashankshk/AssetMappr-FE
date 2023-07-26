@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.frame-1-description{
+    color: #000;
+    font-size: 1.125rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.icon-list-description{
+  color: #000;
+  font-size: 1.125rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.frame-5-description{
+  color: #000;
+  font-size: 1.125rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
+.frame-footer-description{
+  color: #FFF;
+  font-size: 1.125rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  margin-bottom: 3rem;
+}
+
+.frame-2-description{
+  color: #FFF;
+  font-size: 1.125rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
+@media (max-width:430px) {
+  .frame-2-description{
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+  }
+  .frame-5-description{
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+  }
+  .frame-footer-description{
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    margin-bottom: 0;
+  }
+}

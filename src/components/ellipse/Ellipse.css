@@ -1,0 +1,24 @@
+.ellipse{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.caption-text{
+    color: #000;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+@media (max-width:430px) {
+    .ellipse{
+        align-self: center;
+        padding: 1rem;
+    }
+    .caption-text{
+        font-size: 0.75rem;
+    }
+}

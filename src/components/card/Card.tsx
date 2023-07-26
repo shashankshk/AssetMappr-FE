@@ -6,12 +6,14 @@ import PropTypes from 'prop-types';
 */
 interface CardProps {
     children: React.ReactNode;
+    classname?:string;
 }
 const Card: React.FC<CardProps> = (props) => {
-    return <div className='card'>{props.children}</div>;
+    return <div className={props.classname}>{props.children}</div>;
 };
 
 Card.propTypes = {
     children: PropTypes.node.isRequired,
+    classname: PropTypes.string
 };
 export default Card;

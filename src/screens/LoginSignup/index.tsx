@@ -35,7 +35,7 @@ const WelcomeScreen = () => {
 
   return (
     <Background classname='App' backgroundImage={imageUrl}>
-      <Card>
+      <Card classname='card'>
         <Header classname='welcome_title' content='Welcome to Asset Mappr!' />
         <Subheader classname='welcome2_subtitle' content='Login or Sign Up to get started' />
         <Button type='submit' value='Sign Up' className='signup_button' onClick={signup}>
