@@ -13,9 +13,7 @@ const Icon: React.FC<Props> = ({
     iconname
 }) => {
     return (
-        <span className={classname}>
-                    <FontAwesomeIcon icon={iconname} />
-        </span>
+        <span className={classname}><FontAwesomeIcon icon={iconname} /></span>
     )
 };
 
