@@ -1,0 +1,23 @@
+.footer{
+    @extend %landing-footer-style;
+    font-size: 1rem;
+    @include font-family(tertiary);
+    @include dimensions-for-phone-only{
+        display: none;
+    }
+}
+.mobile-footer{
+    display: none;
+    @include dimensions-for-phone-only{
+        color: #FFF;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;
+        display: inline;
+        text-align: center;
+        font-size: 0.75rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        @include font-family(tertiary);
+    }
+}

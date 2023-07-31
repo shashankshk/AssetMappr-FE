@@ -1,0 +1,21 @@
+.toggle-bar{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1rem;
+    @include dimensions-for-phone-only{
+        display: flex;
+    }
+}
+
+.bar{
+    height: 2.5px;
+    width: 90%;
+    background-color: black;
+    border-radius: 8px;
+
+}

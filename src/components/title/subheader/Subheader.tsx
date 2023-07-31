@@ -1,8 +1,8 @@
 import React from 'react';
-import './Subheader.css';
+
 interface Props{
     classname: string;
-    content: string;
+    content?: string;
 }
 const Subheader: React.FC<Props> = ({
     classname,

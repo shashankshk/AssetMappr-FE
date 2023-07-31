@@ -1,0 +1,48 @@
+.frame-1-description{
+  @extend %landing-frame-styles-description;
+  color: #000;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  @include dimensions-for-phone-only{
+    text-align: center;
+  }
+}
+
+.icon-list-description{
+  @extend %landing-frame-styles-description;
+  color: #000;
+  font-weight: 400;
+  @include dimensions-for-phone-only{
+    margin-left: 0.5rem;
+  }
+}
+
+.frame-5-description{
+  @extend %landing-frame-styles-description;
+  color: #000;
+  @include dimensions-for-phone-only{
+      text-align: center;
+      font-size: 1rem;
+      margin-right: 3.5rem;
+  }
+}
+
+.frame-footer-description{
+  @extend %landing-frame-styles-description;
+  color: #FFF;
+  margin-bottom: 3rem;
+  @include dimensions-for-phone-only{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.frame-2-description{
+  @extend %landing-frame-styles-description;
+  color: #FFF;
+  @include dimensions-for-phone-only{
+      text-align: center;
+      font-size: 1rem;
+  }
+}

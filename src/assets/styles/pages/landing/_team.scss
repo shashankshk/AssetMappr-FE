@@ -1,0 +1,19 @@
+.current-members-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include dimensions-for-phone-only{
+        margin-left: 1.5rem;
+    }
+}
+.past-members-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include dimensions-for-phone-only{
+        margin-left: 1.5rem;
+    }
+}
+.description {
+    width: 25rem;
+}

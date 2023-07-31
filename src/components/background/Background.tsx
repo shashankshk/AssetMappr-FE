@@ -1,5 +1,5 @@
 import React from 'react';
-import './Background.css';
+
 interface Props {
     classname: string;
     backgroundImage?: any;

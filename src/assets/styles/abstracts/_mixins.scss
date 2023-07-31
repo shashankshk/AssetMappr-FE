@@ -1,0 +1,66 @@
+@mixin hover-effect{
+    border: 2px solid slateblue;
+    background-color: black;
+}
+
+@mixin disable-button{
+    opacity: 0.5; /* Example: reduce opacity to visually indicate the button is disabled */
+    pointer-events: none; /* Disable pointer events to prevent clicks */
+}
+
+@mixin placeholder-styles{
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::placeholder {
+      @content;
+    }
+}
+
+@mixin font-family($family-name) {
+    font-family: map-get($map: $font-families, $key: $family-name);
+}
+
+@mixin dimensions-for-phone-only() {
+    @media (max-width:450px) {
+        @content;
+    }
+}
+
+@mixin frame-dimensions-for-phone-only() {
+    @media (max-width:450px) {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        padding: 1rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        @content;
+    }
+}
+
+@mixin frame-left-dimensions-for-phone-only() {
+    @media (max-width:450px) {
+        width:80vw;
+        margin-left: 0;
+        margin-right: 0;
+        @content;
+    }
+}
+
+@mixin frame-right-dimensions-for-phone-only() {
+    @media (max-width:450px) {
+        width: 80vw;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-left: 0;
+        @content;
+    }
+}
+
+@mixin styling-for-browser-size($max-width) {
+    @media(max-width: $max-width) {
+        @content
+    }
+}

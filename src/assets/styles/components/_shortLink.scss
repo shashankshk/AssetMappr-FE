@@ -1,0 +1,32 @@
+.skip {
+    color: black;
+    text-align: center;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+.admin {
+    color: slateblue;
+    font-size: 0.95rem;
+    @include styling-for-browser-size(450px) {
+        position: absolute;
+        bottom: 25px;
+    }
+}
+.mobile-intro-link{
+    display: none;
+    @include dimensions-for-phone-only{
+        display: inline;
+        color: #5E47E0;
+        text-align: center;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem; /* 200% */
+        letter-spacing: 0.02375rem;
+        text-decoration-line: underline;
+        @include font-family(primary)
+    }
+}

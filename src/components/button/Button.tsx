@@ -1,5 +1,4 @@
 import React from 'react';
-import './Button.css';
 
 interface Props {
   border?: string;
@@ -9,8 +8,8 @@ interface Props {
   onClick?: React.FormEventHandler;
   radius?: string
   width?: string;
-  type: 'button' | 'submit' | 'reset';
-  value: string;
+  type?: 'button' | 'submit' | 'reset';
+  value?: string;
   className: string;
   disabled?: boolean;
 }

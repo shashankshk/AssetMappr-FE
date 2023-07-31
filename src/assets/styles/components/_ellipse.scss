@@ -1,0 +1,21 @@
+.ellipse{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    @include dimensions-for-phone-only{
+        align-self: center;
+        padding: 1rem;
+    }
+}
+.caption-text{
+    color: #000;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    @include font-family(primary);
+    @include dimensions-for-phone-only{
+        font-size: 0.75rem;
+    }
+}

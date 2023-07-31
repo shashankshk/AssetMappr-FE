@@ -1,0 +1,32 @@
+.card {
+    width: 35vw;
+    background-color: white;
+    border-radius: 0;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    @include styling-for-browser-size(900px) {
+      width: 45vw;
+    }
+    @include styling-for-browser-size(800px) {
+      width: 50vw;
+    }
+    @include styling-for-browser-size(700px) {
+      width: 55vw;
+    }
+    @include styling-for-browser-size(640px) {
+      width: 60vw;
+    }
+    @include styling-for-browser-size(580px) {
+      width: 70vw;
+    }
+    @include styling-for-browser-size(479px) {
+      width: 85vw;
+      box-shadow: none;
+    }
+    @include styling-for-browser-size(420px) {
+      width: 100vw;
+      box-shadow: none;
+    }
+}

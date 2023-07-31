@@ -1,5 +1,5 @@
 import React, { RefObject } from 'react'
-import './InputField.css'
+
 interface Props {
   type: string
   id?: string

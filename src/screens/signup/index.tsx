@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect, SetStateAction, Dispatch, RefObject } from 'react'
 import Card from '../../components/card/Card'
-import './Signup.css'
-import backgroundImage from '../../images/background_image.png'
+import backgroundImage from '../../assets/images/background_image.png'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 
 import Background from '../../components/background/Background'

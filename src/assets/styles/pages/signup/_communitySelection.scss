@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1 {
+    // font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    @include font-family(secondary)
+}
+
+body {
+    min-height: 100vh;
+}
+
+.select_community {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+

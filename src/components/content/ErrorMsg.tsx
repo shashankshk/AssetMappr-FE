@@ -1,5 +1,4 @@
 import React from 'react';
-import './ErrorMsg.css';
 
 interface Props{
     id:string;

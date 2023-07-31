@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect, useContext } from 'react'
 import Card from '../../components/card/Card'
-import backgroundImage from '../../images/background_image.png'
+import backgroundImage from '../../assets/images/background_image.png'
 import Background from '../../components/background/Background'
 import Header from '../../components/title/header/Header'
 import InputField from '../../components/input/inputfield/InputField'
@@ -80,6 +80,3 @@ const Login = () => {
 }
 
 export default Login
-
-// onChange={(e) => setUser(e.target.value)}
-// onChange={(e) => setPassword(e.target.value)}

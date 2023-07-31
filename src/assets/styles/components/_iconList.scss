@@ -1,0 +1,20 @@
+.icon-header-display{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5rem;
+    @include dimensions-for-phone-only{
+        flex-direction: column;
+    }
+}
+
+.icon-frame-4-header-display{
+    display: flex;
+    flex-direction: row;
+}
+.icon-item-description{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    @include dimensions-for-phone-only{
+        margin-left: 0;
+    }
+}

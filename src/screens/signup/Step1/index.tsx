@@ -3,7 +3,6 @@ import { Link, useNavigate, useOutletContext } from 'react-router-dom'
 import Button from '../../../components/button/Button'
 import InputField from '../../../components/input/inputfield/InputField'
 import ErrorMsg from '../../../components/content/ErrorMsg'
-// import { useSignup } from './'
 import Header from '../../../components/title/header/Header'
 
 type ParentProps = {

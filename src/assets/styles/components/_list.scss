@@ -1,0 +1,41 @@
+ul.disclaimer_list {
+    list-style-type: disc;
+    color: black;
+    margin-left: 1rem;
+}
+
+ul.nav-options-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    @include dimensions-for-phone-only{
+        flex-direction: column;
+    }
+}
+
+.nav-options-items {
+    color: #000;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.02375rem;
+    text-transform: capitalize;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    @include font-family(primary);
+    @include dimensions-for-phone-only{
+        margin-left: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover{
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+.a-list{
+    text-decoration: none;
+    color: #000;
+}

@@ -1,7 +1,6 @@
 import Card from '../../../components/card/Card'
 import { useState, useEffect } from 'react'
-import './ProfileInfo.css'
-import backgroundImage from '../../images/background_image.png'
+import backgroundImage from '../../assets/images/background_image.png'
 import { useNavigate } from 'react-router-dom'
 import Header from '../../../components/title/header/Header'
 import InputLabel from '../../../components/input/inputlabel/InputLabel'
@@ -121,17 +120,3 @@ const ProfileInfoScreen = () => {
 }
 
 export default ProfileInfoScreen
-
-/*
-
-<select className="select_race" id="race" name="race" onChange={(e) => setSelectedRace(e.target.value)}>
-                        <option style={{display:'none'}} value="" selected>Select your response</option>
-                        <option value="White">White</option>
-                        <option value="Black or African American">Black or African American</option>
-                        <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
-                        <option value="Asian">Asian</option>
-                        <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
-                        <option value="self_identify">I self identify as another race</option>
-                        <option value="not_to_identify">I wish not to self-identify</option>
-                    </select>
-*/

@@ -1,0 +1,15 @@
+.checkicon {
+    color: slateblue;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 0;
+}
+
+.icon {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: #5E47E0;
+    @include dimensions-for-phone-only{
+        margin-bottom: 1rem;
+    }
+}

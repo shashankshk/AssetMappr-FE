@@ -2,7 +2,6 @@ import React from 'react'
 import Subheader from '../title/subheader/Subheader'
 import Button from '../button/Button'
 import ListLink from '../list/ListLink'
-import './Navbar.css'
 const Navbar = () => {
 
   const items = [

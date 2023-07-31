@@ -1,8 +1,7 @@
-import './Disclaimer.css'
 import { useState, useEffect } from 'react'
 import Card from '../../../components/card/Card'
 import { useNavigate } from 'react-router-dom'
-import backgroundImage from '../../../images/background_image.png'
+import backgroundImage from '../../../assets/images/background_image.png'
 import List from '../../../components/list/List'
 import Background from '../../../components/background/Background'
 import Header from '../../../components/title/header/Header'
@@ -67,16 +66,3 @@ const DisclaimerScreen = () => {
 }
 
 export default DisclaimerScreen
-
-/*
-<ul className="disclaimer_list">
-                <li> Providing data about your race, ethnicity and sex is OPTIONAL.</li> 
-                <li> You will NOT be asked to provide this data again.</li> 
-                <li> Your data cannot be used to track or identify you.</li> 
-                <li> All data will be analyzed collectively in a secure database.</li>
-                <li> Planners and app developers do NOT have access to individual user information or profiles.</li>
-                <li> You are the sole owner of your data.</li>
-                <li> By participating, you are making a valuable contribution to your community. Thank you for your trust and support!</li>
-            </ul>
-
-*/
