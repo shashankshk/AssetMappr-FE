@@ -11,7 +11,7 @@ import { ACCESS_TOKEN, REFRESH_TOKEN } from '../constants'
 const api: AxiosInstance = axios.create({
   // setting the base url which will be used in the entire application
   // TODO: set the base url of the Django app
-  baseURL: 'http://localhost:8000/api',
+  baseURL: process.env.BASE_URL || 'http://localhost/api',
 })
 
 // Add a request interceptor to include the access token in API requests
