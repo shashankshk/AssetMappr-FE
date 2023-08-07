@@ -40,11 +40,7 @@ const Step2: FC<ParentProps> = ({ baseProps }) => {
             label='Must match the first password input field.'
           />
         </div>
-        <Button
-          type='submit'
-          value='Sign Up'
-          className={`signup2_button ${validMatch ? '' : 'disabled'} `}
-        >
+        <Button type='submit' value='Sign Up' disabled={!validMatch} flexible size='large'>
           Sign Up
         </Button>
       </form>

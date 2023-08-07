@@ -1,51 +1,46 @@
-import React from 'react';
-
-interface Props {
-  border?: string;
-  color?: string;
-  children?: React.ReactNode;
-  height?: string;
-  onClick?: React.FormEventHandler;
-  radius?: string
-  width?: string;
-  type?: 'button' | 'submit' | 'reset';
-  value?: string;
-  className: string;
-  disabled?: boolean;
+import React from 'react'
+import cx from 'classnames'
+type ButtonSize = 'large' | 'medium' | 'small'
+export interface ButtonProps {
+  children?: React.ReactNode
+  onClick?: React.FormEventHandler
+  type?: 'button' | 'submit' | 'reset'
+  value?: string
+  className?: string
+  disabled?: boolean
+  size?: ButtonSize
+  flexible?: boolean
 }
 
-
-const Button: React.FC<Props> = ({ 
-    border,
-    color,
-    children,
-    height,
-    onClick, 
-    radius,
-    width,
-    type,
-    value,
-    className,
-    disabled
-  }) => { 
+const Button: React.FC<ButtonProps> = ({
+  children,
+  onClick,
+  type,
+  value,
+  className,
+  disabled,
+  size,
+  flexible,
+}) => {
   return (
-    <button 
+    <button
       onClick={onClick}
-      style={{
-         backgroundColor: color,
-         border,
-         borderRadius: radius,
-         height,
-         width
-      }}
       type={type}
       value={value}
-      className={className}
+      className={cx(
+        'btn',
+        { [`btn-${type}`]: type ?? true },
+        className,
+        {
+          [`btn_${size}`]: size ?? true,
+        },
+        { [`btn_flexible`]: flexible },
+      )}
       disabled={disabled}
     >
-    {children}
+      {children}
     </button>
-  );
+  )
 }
 
-export default Button;
+export default Button

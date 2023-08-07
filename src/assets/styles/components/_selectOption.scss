@@ -1,35 +1,20 @@
-select {
-    color: black;
-    width: 95%;
-    margin: 3rem auto 1rem auto;
-    padding: 0.5rem;
-    font-size: 18px;
+.select-primary {
+    color: $text-color;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
     border: 1px solid black;
-    border-radius: 0.5rem;
-    @include font-family(primary);
-    @include styling-for-browser-size(450px){
+
+    &_large {
+        font-size: 18px;
+        height: 56px;
+    }
+
+    @include styling-for-browser-size(450px) {
         width: 100%;
     }
-    @include styling-for-browser-size(300px){
+
+    @include styling-for-browser-size(300px) {
         font-size: 15px;
     }
-}
-
-.select_ethnicity, .select_race, .select_sex {
-    margin: 0.5rem auto 1rem auto;
-    border: 1px solid black;
-    font-size: 15px;
-    width: 95%;
-}
-
-
-@media (max-width:450px) {
-    select {
-        width: 100%;
-    }
-}
-@media (max-width:300px) {
-    select {
-        font-size: 15px;
-     }
 }
