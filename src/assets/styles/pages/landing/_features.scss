@@ -1,7 +1,7 @@
 .frame-3-logos{
     display: flex;
     flex-direction: row;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         justify-content: center;
     }
 }

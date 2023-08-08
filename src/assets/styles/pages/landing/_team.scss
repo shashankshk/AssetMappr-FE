@@ -1,9 +1,17 @@
+.current-members{
+    @include dimensions-for-tablet-only{
+        display: grid;
+    }
+}
 .current-members-images{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     @include dimensions-for-phone-only{
         margin-left: 1.5rem;
+    }
+    @include dimensions-for-tablet-only{
+        align-self: center;
     }
 }
 .past-members-images{
@@ -15,5 +23,6 @@
     }
 }
 .description {
-    width: 25rem;
+    display: grid;
+    
 }

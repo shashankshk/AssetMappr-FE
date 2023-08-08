@@ -9,7 +9,7 @@
     margin-top: 1rem;
     margin-right: 1rem;
     color: #5E47E0;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         margin-bottom: 1rem;
     }
 }

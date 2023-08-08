@@ -101,6 +101,9 @@
     padding: 0.1rem;
     width: 7rem;
     margin-top: 0.5rem;
+    @include dimensions-for-large-desktop-only{
+        font-size: 1.1rem;
+    }
 }
 
 .user-signup{
@@ -112,7 +115,7 @@
     margin-right: 2rem;
     margin-top: 0.5rem;
 
-    @include dimensions-for-phone-only {
+    @include dimensions-for-phone-and-tablet {
             width: 100%;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
             transition: box-shadow 0.3s ease-in-out;
@@ -122,6 +125,9 @@
         &:hover {
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
         }
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 1.1rem;
     }
 }
 
@@ -133,8 +139,12 @@
     font-size: 1.125rem;
     text-transform: uppercase;
     width: 17.5rem;
-
-    @include dimensions-for-phone-only {
+    @include styling-for-browser-size(900px){
+        width: 10rem;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    @include dimensions-for-phone-and-tablet {
         width: 14.625rem;
         font-size: 1rem;
         align-self: center;
@@ -158,6 +168,9 @@
         height: 3.5rem;
         margin-bottom: 1rem;
     }
+    @include dimensions-for-tablet-only{
+        margin-left: 2rem;
+    }
 }
 
 .submit-button{
@@ -174,5 +187,8 @@
         width: 19.5rem;
         height: 3.5rem;
         margin-top: 0.5rem;
+    }
+    @include dimensions-for-tablet-only{
+        margin-left: 2rem;
     }
 }

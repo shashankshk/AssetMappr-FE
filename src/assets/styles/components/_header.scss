@@ -100,12 +100,28 @@ h1 {
 .frame-1-header{
     @extend %landing-header-style;
     color: #2B2C33;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1.25rem;
-    @include dimensions-for-phone-only{
+    @include styling-for-browser-size(900px) {
+        font-size: 2.5rem;
+    }
+    @include styling-for-browser-size(805px) {
+        font-size: 2.2rem;
+    }
+    /*
+    @include styling-for-browser-size(750px) {
+        font-size: 2rem;
+    }
+    @include styling-for-browser-size(700px) {
+        font-size: 1.5rem;
+    }*/
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 2rem;
         
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 5rem;
     }
 }
 
@@ -113,12 +129,14 @@ h1 {
     @extend %landing-header-style;
     color: #FFF;
     font-size: 2rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 2rem;
         @include font-family(tertiary)  
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 3rem;
     }
 }
 
@@ -129,9 +147,13 @@ h1 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 2rem;
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 4rem;
+        width: 50vw;
     }
 }
 
@@ -140,7 +162,7 @@ h1 {
     color: #000;
     font-size: 1.5rem;
     padding: 0.4rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         font-size: 1.25rem;
         margin-left: 0;
         padding: 0;
@@ -153,10 +175,13 @@ h1 {
     color: #191A15;
     font-size: 3rem;
     margin-bottom: 2rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 2rem;
         @include font-family(tertiary)  
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 4rem;
     }
 }
 
@@ -167,7 +192,10 @@ h1 {
     @include font-family(tertiary);
     margin-top: 0.8rem;
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 700;
+    @include dimensions-for-large-desktop-only{
+        font-size: 1.2rem;
+    }
 }
 
 .frame-5-header{
@@ -175,9 +203,12 @@ h1 {
     color: #191A15;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 2rem;
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 3rem;
     }
 }
 
@@ -188,7 +219,7 @@ h1 {
     font-weight: 500;
     line-height: 1.875rem;
     margin-left: 2rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 0.75rem;
         margin-left: 0;
@@ -201,8 +232,11 @@ h1 {
     color: #FFF;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 2rem;
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 3rem;
     }
 }

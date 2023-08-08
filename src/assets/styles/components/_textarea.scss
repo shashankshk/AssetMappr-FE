@@ -9,4 +9,7 @@
         height: 10.75rem;
         align-self: center;
     }
+    @include dimensions-for-tablet-only{
+        margin-left: 2rem;
+    }
 }

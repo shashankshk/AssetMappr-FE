@@ -42,6 +42,10 @@ input[type="date"] {
         height: 3.75rem;
         align-self: center;
     }
+    @include dimensions-for-tablet-only{
+        align-self: center;
+        margin-left: 2rem;
+    }
 }
 
 .frame-6-field {
@@ -52,5 +56,9 @@ input[type="date"] {
     @include dimensions-for-phone-only{
         width: 19.5rem;
         height: 3.75rem;
+    }
+    @include dimensions-for-tablet-only{
+        align-self: center;
+        margin-left: 2rem;
     }
 }

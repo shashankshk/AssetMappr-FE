@@ -30,6 +30,7 @@
 }
 %base-frame{
     display: flex;
+    align-items: center;
     width: 100vw;
     padding: 3.5rem;
     justify-content: space-between;
@@ -46,13 +47,13 @@
 %base-frame-left{
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    /*width: 45vw;*/
 }
 %base-frame-right{
-    width: 50vw;
+    /*width: 50vw;*/
     margin-left: 1rem;
     position: relative;
-    margin-right: 2rem;
+    /*margin-right: 2rem;*/
 }
 %big-textarea{
     background-color: #161C28;
@@ -112,7 +113,7 @@
 }
 %landing-frame-image-style{
     width: 30.8125rem;
-    height: 23.75rem;
+    height: 24.75rem;
     margin-left: 4rem;
 }
 %landing-footer-style{

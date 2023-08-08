@@ -92,7 +92,7 @@ const Team = () => {
                 classname='member-image'
                 image={currentmember7}
                 captions={[
-                  { index: 1, text: 'Sharoni R Chowdhury' },
+                  { index: 1, text: 'Sharoni Chowdhury' },
                   { index: 2, text: 'Computer Science' },
                 ]}
               />

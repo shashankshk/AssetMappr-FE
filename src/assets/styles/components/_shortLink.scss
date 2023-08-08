@@ -17,7 +17,7 @@
 }
 .mobile-intro-link{
     display: none;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         display: inline;
         color: #5E47E0;
         text-align: center;

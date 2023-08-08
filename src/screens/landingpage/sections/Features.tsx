@@ -3,14 +3,14 @@ import Frame from '../../../components/layouts/Frame';
 import Header from '../../../components/title/header/Header';
 import Subheader from '../../../components/title/subheader/Subheader';
 import Image from '../../../components/image/Image';
-import monvalleylogo from '../../../assets/images/monvalleyasset.png'
-import citypen from '../../../assets/images/PAlogo.png'
+import monvalleylogo from '../../../assets/images/monvalleyasset.svg'
+import citypen from '../../../assets/images/PAlogo.svg'
 import IconList from '../../../components/list/IconList';
 import { faMap,faClipboardList,faPieChart} from '@fortawesome/free-solid-svg-icons'
 
 const Features = () => {
   return (
-    <Frame id='features' classname=''
+    <Frame id='features' classname='-3'
     leftchildren = {
         <>
         <Header

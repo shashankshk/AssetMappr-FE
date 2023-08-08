@@ -7,7 +7,7 @@
     justify-content: space-between;
     width: 1.5rem;
     height: 1rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         display: flex;
     }
 }

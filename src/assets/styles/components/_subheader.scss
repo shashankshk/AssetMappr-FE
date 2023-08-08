@@ -43,16 +43,21 @@ p {
         font-size: 1.25rem;
     }
     
+    
 }
 
 .frame-1-subheader{
     @extend %landing-frame-font-styles-subheader;
     font-size: 1rem;
     margin-bottom: 1.25rem;
-    @include dimensions-for-phone-only{
+    @include styling-for-browser-size(900px){
+        font-size: 0.8rem;
+    }
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 0.75rem;
     }
+    
 }
 
 .frame-3-subheader{
@@ -60,7 +65,7 @@ p {
     color: #FF3D00;
     font-size: 1.125rem;
     margin-bottom: 1.5rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         text-align: center;
         font-size: 0.75rem;
     }

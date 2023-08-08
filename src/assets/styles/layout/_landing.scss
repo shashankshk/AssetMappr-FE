@@ -1,75 +1,109 @@
 .frame{
     @extend %base-frame;
-    @include frame-dimensions-for-phone-only;
+    @include frame-dimensions-for-phone-tablet;
+    @include dimensions-for-monitor-only{
+        background-color: #161C28;
+    }
 }
 
 .frame-left{
    @extend %base-frame-left;
-   
-   @include frame-left-dimensions-for-phone-only;
+   /*
+   @include styling-for-browser-size(730px){
+    width: 35vw;
+   }*/
+   @include frame-left-dimensions-for-phone-tablet;
 }
 
 .frame-right{
     @extend %base-frame-right;
-
-    @include frame-right-dimensions-for-phone-only;
+    @include frame-right-dimensions-for-phone-tablet;
 }
 .frame-2{
     @extend %base-frame;
     background: #161C28;
     margin-left: 0;
+    align-items: flex-start;
 
-    @include frame-dimensions-for-phone-only {
+    @include frame-dimensions-for-phone-tablet {
         margin-left: 0;
     }
 }
 .frame-left-2{
     @extend %base-frame-left;
-    @include frame-left-dimensions-for-phone-only;
+    @include frame-left-dimensions-for-phone-tablet;
+    @include dimensions-for-large-desktop-only{
+        width: 55vw;
+    }
 }
 .frame-right-2{
-    width: 50vw;
+    /*width: 50vw;*/
     margin-left: 5rem;
-
-    @include frame-right-dimensions-for-phone-only;
+    margin-right: 2rem;
+    @include frame-right-dimensions-for-phone-tablet;
 }
+
+.frame-3{
+    @extend %base-frame;
+    @include frame-dimensions-for-phone-tablet;
+}
+
+.frame-left-3{
+    @extend %base-frame-left;
+    @include frame-left-dimensions-for-phone-tablet;
+}
+.frame-right-3{
+    @extend %base-frame-right;
+    @include frame-right-dimensions-for-phone-tablet;
+}
+
 .frame-4{
     @extend %base-frame;
     background: #FBFBFB;
-    @include frame-dimensions-for-phone-only;
+    @include frame-dimensions-for-phone-tablet;
 }
 .frame-right-4{
     @extend %base-frame-right;
 
-    @include frame-right-dimensions-for-phone-only;
+    @include frame-right-dimensions-for-phone-tablet;
 }
 .frame-5{
     @extend %base-frame;
-    @include frame-dimensions-for-phone-only;
+    align-items: flex-start;
+    padding-right: 0;
+    @include frame-dimensions-for-phone-tablet;
 }
 .frame-left-5{
     @extend %base-frame-left;
     width: 55vw;
-    @include frame-left-dimensions-for-phone-only;
+    @include frame-left-dimensions-for-phone-tablet;
 }
 .frame-right-5{
+    @extend %base-frame-right;
     margin-left: 3rem;
-    @include frame-right-dimensions-for-phone-only;
+    @include frame-right-dimensions-for-phone-tablet;
 }
 .frame-6{
     @extend %base-frame;
     background: #161C28;
     margin-bottom: 0;
-    @include frame-dimensions-for-phone-only {
+    padding-bottom: 1rem;
+    align-items: flex-start;
+    @include frame-dimensions-for-phone-tablet {
         margin-bottom: 0;
     }
 }
 .frame-left-6{
     @extend %base-frame-left;
-    @include frame-left-dimensions-for-phone-only;
+    @include frame-left-dimensions-for-phone-tablet;
+    @include dimensions-for-large-desktop-only{
+        width: 55vw;
+    }
 }
 .frame-right-6{
-    width: 50vw;
+    /*width: 50vw;*/
+    @extend %base-frame-right;
     margin-left: 5rem;
-    @include frame-right-dimensions-for-phone-only;
+    margin-right: 2rem;
+    @include frame-right-dimensions-for-phone-tablet;
 }
