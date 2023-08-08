@@ -7,11 +7,19 @@ import InputLabel from '../../../components/input/inputlabel/InputLabel'
 import InputField from '../../../components/input/inputfield/InputField'
 import SelectOption from '../../../components/select/SelectOption'
 import Button from '../../../components/button/Button'
+import { useSignup } from '../SignUpContext'
+import axios from 'axios'
+import { BASE_URL } from '../../../utils/constants'
 // component which asks the user for their profile information
 // TODO: For mobile view, modify the positions of the header and the button
 const ProfileInfoScreen = () => {
   const navigate = useNavigate()
-
+  const { data } = useSignup()
+  useEffect(() => {
+    if (!data.userId) {
+      navigate('/signup')
+    }
+  }, [navigate])
   const ethnicityOptions = [
     { label: 'Hispanic', value: 'Hispanic' },
     { label: 'Non-Hispanic', value: 'Non-Hispanic' },
@@ -37,12 +45,38 @@ const ProfileInfoScreen = () => {
     { label: 'I wish not to self-identify', value: 'not_to_identify' },
   ]
 
-  const handleProfileSubmit = async () => {
+  const handleProfileSubmit = async (e: any) => {
+    e.preventDefault()
+    try {
+      const profileData = {
+        userId: data.userId,
+        sex,
+        race,
+        ethnicity,
+        dob,
+      }
+      const response = await axios.post(`${BASE_URL}/user/updateProfile`, profileData)
+      if (response.status == 201) {
+        const userId = response.data.userId
+        navigate('/login')
+      }
+    } catch (err: any) {
+      // if we didn't hear back from the server at all
+      // if (!err.response) {
+      //   setErrMsg('Server down. Please try again later.')
+      // } else if (err.response?.status === 409) {
+      //   setErrMsg('User already created. Please sign in.')
+      // } else {
+      //   setErrMsg('Registration failed')
+      // }
+    }
     navigate('/home')
   }
 
-  const [selectedRace, setSelectedRace] = useState('')
-  const [selectedSex, setSelectedSex] = useState('')
+  const [race, setRace] = useState('')
+  const [sex, setSex] = useState('')
+  const [dob, setDob] = useState('')
+  const [ethnicity, setEthnicity] = useState('')
 
   return (
     <>
@@ -61,6 +95,7 @@ const ProfileInfoScreen = () => {
             placeholder='MM/DD/YYYY'
             autocomplete='off'
             required={true}
+            onchange={(e) => setDob(e.target.value)}
           />
 
           <InputLabel htmlfor='ethnicity' content='2. What is your ethnicity? (Optional)' />
@@ -69,6 +104,7 @@ const ProfileInfoScreen = () => {
             id='ethnicity'
             name='ethnicity'
             initialValue=''
+            onchange={(e) => setEthnicity(e.target.value)}
             initialLabel='Select your response'
             options={ethnicityOptions}
           ></SelectOption>
@@ -78,17 +114,18 @@ const ProfileInfoScreen = () => {
             classname='select_race'
             id='race'
             name='race'
-            onchange={(e) => setSelectedRace(e.target.value)}
+            onchange={(e) => setRace(e.target.value)}
             initialValue=''
             initialLabel='Select your response'
             options={raceOptions}
           ></SelectOption>
 
-          {selectedRace === 'self_identify' && (
+          {race === 'self_identify' && (
             <InputField
               type='text'
               className='self_race'
               placeholder='Please tell us what you identify as (optional)'
+              onchange={(e) => setRace(e.target.value)}
             />
           )}
 
@@ -97,17 +134,18 @@ const ProfileInfoScreen = () => {
             classname='select_sex'
             id='sex'
             name='sex'
-            onchange={(e) => setSelectedSex(e.target.value)}
+            onchange={(e) => setSex(e.target.value)}
             initialValue=''
             initialLabel='Select your response'
             options={selectedSexOptions}
           />
 
-          {selectedSex === 'Other' && (
+          {sex === 'Other' && (
             <InputField
               type='text'
               className='self_sex'
               placeholder='Please tell us which (optional)'
+              onchange={(e) => setSex(e.target.value)}
             />
           )}
         </div>

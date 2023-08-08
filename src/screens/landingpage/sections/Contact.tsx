@@ -9,46 +9,49 @@ import TextArea from '../../../components/input/textarea/TextArea'
 
 const Contact = () => {
   return (
-    <Frame id='contact' classname='-6'
-    leftchildren = {
+    <Frame
+      id='contact'
+      classname='-6'
+      leftchildren={
         <>
-            <Header classname='frame-footer-header' content='We’d love to hear from you!'></Header>
-            <Description
+          <Header classname='frame-footer-header' content='We’d love to hear from you!'></Header>
+          <Description
             classname='frame-footer-description'
             content='We’re currently building a new platform from the ground up and always looking for people to collaborate with in different ways. Send us your email with a message and we will get back to you.'
-            ></Description>
-            <Footer
+          ></Description>
+          <Footer
             classname='footer'
             content='© 2023 Asset Mappr. Copyright and rights reserved.'
-            ></Footer>
+          ></Footer>
         </>
-    }
-    rightchildren = {
+      }
+      rightchildren={
         <>
-        <div className='frame-6-right'>
-          <form>
-            <InputField
-              type='text'
-              placeholder='Enter your email here'
-              className='frame-6-field'
-            ></InputField>
-          <TextArea classname='frame-textarea'
+          <div className='frame-6-right'>
+            <form>
+              <InputField
+                type='text'
+                placeholder='Enter your email here'
+                className='frame-6-field'
+              ></InputField>
+              <TextArea
+                classname='frame-textarea'
                 name='frame-6-textarea'
                 rows={12}
                 cols={50}
                 placeholder='Type in your message'
-                />
-          <Button type='button' value='Submit' className='submit-button'>
-            SUBMIT
-          </Button>
-          </form>
-          <Footer
-          classname='mobile-footer'
-          content='© 2023 Asset Mappr. Copyright and rights reserved.'
-        ></Footer>
-        </div>
+              />
+              <Button type='submit' value='Submit' flexible size='large'>
+                SUBMIT
+              </Button>
+            </form>
+            <Footer
+              classname='mobile-footer'
+              content='© 2023 Asset Mappr. Copyright and rights reserved.'
+            ></Footer>
+          </div>
         </>
-    }
+      }
     />
   )
 }

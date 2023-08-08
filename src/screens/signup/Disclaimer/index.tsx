@@ -7,11 +7,17 @@ import Background from '../../../components/background/Background'
 import Header from '../../../components/title/header/Header'
 import Button from '../../../components/button/Button'
 import Subheader from '../../../components/title/subheader/Subheader'
+import { useSignup } from '../SignUpContext'
 // The component which contains the disclaimer
 // TODO: button at bottom of screen for mobile browser
 const DisclaimerScreen = () => {
   const navigate = useNavigate()
-
+  const { data } = useSignup()
+  useEffect(() => {
+    if (!data.userId) {
+      navigate('/signup')
+    }
+  }, [navigate])
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const imageUrl = windowWidth >= 480 ? backgroundImage : 'none'
 
@@ -58,7 +64,7 @@ const DisclaimerScreen = () => {
         <br></br>
         <List classname='disclaimer_list' content={items}></List>
       </p>
-      <Button type='submit' value='Continue' className='accept_button' onClick={next}>
+      <Button type='submit' value='Continue' flexible size='large' onClick={next}>
         Continue
       </Button>
     </>

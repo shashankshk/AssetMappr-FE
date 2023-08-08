@@ -1,7 +1,6 @@
 import path from 'path'
 import webpack, { Configuration } from 'webpack'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
-import Dotenv from 'dotenv-webpack'
 import * as webpackDevServer from 'webpack-dev-server'
 
 const config: Configuration = {
@@ -50,17 +49,14 @@ const config: Configuration = {
     publicPath: '/',
   },
   plugins: [
-    new Dotenv({
-      path: './.env',
-    }),
     new CopyWebpackPlugin({
       patterns: [{ from: 'public' }],
     }),
-    // new webpack.DefinePlugin({
-    //   'process.env.GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
-    //   'process.env.BASE_API_URL': JSON.stringify(process.env.BASE_API_URL),
-    //   'process.env.BASE_MAP_ID': JSON.stringify(process.env.BASE_MAP_ID),
-    // }),
+    new webpack.DefinePlugin({
+      'process.env.GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
+      'process.env.BASE_API_URL': JSON.stringify(process.env.BASE_API_URL),
+      'process.env.BASE_MAP_ID': JSON.stringify(process.env.BASE_MAP_ID),
+    }),
   ],
   devServer: {
     port: 3000,

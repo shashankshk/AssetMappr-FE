@@ -5,13 +5,13 @@ import axios, {
   InternalAxiosRequestConfig,
 } from 'axios'
 import Cookies from 'js-cookie'
-import { ACCESS_TOKEN, REFRESH_TOKEN } from '../constants'
+import { ACCESS_TOKEN, BASE_URL, REFRESH_TOKEN } from '../constants'
 
 // will import axios from this file which is to be used in other components
 const api: AxiosInstance = axios.create({
   // setting the base url which will be used in the entire application
   // TODO: set the base url of the Django app
-  baseURL: 'http://localhost:8000/api',
+  baseURL: process.env.BASE_API_URL,
 })
 
 // Add a request interceptor to include the access token in API requests
@@ -43,8 +43,8 @@ api.interceptors.response.use(
 
       try {
         // Attempt to refresh the access token
-        const response = await axios.post('/user/refresh-token/', {
-          refres_token: Cookies.get(REFRESH_TOKEN),
+        const response = await axios.post(`${BASE_URL}/user/refresh-token/`, {
+          refresh_token: Cookies.get(REFRESH_TOKEN),
         })
 
         const { access_token } = response.data
