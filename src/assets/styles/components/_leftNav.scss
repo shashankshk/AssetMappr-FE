@@ -1,0 +1,26 @@
+.home-left-nav {
+    width: 242px;
+    height: 100vh;
+    display: block;
+    border-right: 1px solid #EEF2F6;
+    background: #FFF;
+
+    .left-nav-top {
+
+        font-size: 16px !important;
+        padding: 20px 30px;
+
+        .app-title {
+            margin: auto;
+            font-family: Roboto, sans-serif !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+        }
+
+        h2 {
+            margin: auto;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}

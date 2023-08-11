@@ -15,9 +15,9 @@ export default function App() {
         <Route
           path='/home'
           element={
-            <ProtectedRoute authenticationPath='/login'>
-              <HomeScreen />
-            </ProtectedRoute>
+            // <ProtectedRoute authenticationPath='/login'>
+            <HomeScreen />
+            // </ProtectedRoute>
           }
         />
         <Route path='/' element={<LandingPage />} />

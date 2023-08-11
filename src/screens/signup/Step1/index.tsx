@@ -38,6 +38,7 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
   }, [navigate])
 
   const next = async (e: any) => {
+    e.preventDefault()
     const signUpData = {
       ...data[dataKey],
       userName: user,
@@ -64,7 +65,6 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
         setErrMsg('Registration failed')
       }
     }
-    e.preventDefault()
   }
 
   return (
