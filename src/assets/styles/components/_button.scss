@@ -8,6 +8,7 @@
     display: inline;
     flex-grow: 0;
     width: max-content;
+    cursor: pointer;
     // align-self: flex-start;
 
     @include dimensions-for-phone-only {
@@ -26,8 +27,8 @@
     }
 
     &_medium {
-        padding: 16px 20px;
-        font-size: 24px;
+        padding: 12px 15px;
+        font-size: 15px;
     }
 
     &_flexible {
@@ -64,6 +65,7 @@
 //     }
 // }
 
+/*
 .signup_button {
     @extend %base-button;
     margin: 3rem auto 0 auto;
@@ -71,8 +73,9 @@
     @include dimensions-for-phone-only {
         width: 100%;
     }
-}
+}*/
 
+/*
 .login_button {
     @extend %base-button;
     margin: 0.95rem auto 2rem auto;
@@ -84,7 +87,7 @@
         width: 100%;
     }
 }
-
+*/
 .signup2_button {
     @extend %base-button;
     margin: 1rem auto 1rem auto;

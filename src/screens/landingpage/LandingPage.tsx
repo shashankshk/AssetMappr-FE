@@ -42,6 +42,7 @@ const LandingPage = () => {
     <Background classname='landing-page' id='landing'>
       <Navcontainer
         subheaderprops={{
+          size: 'medium',
           classname: 'nav-title',
           content: 'Asset Mappr',
         }}
@@ -59,11 +60,13 @@ const LandingPage = () => {
           type: 'button',
           value: 'user-signup',
           onClick: signup,
+          className: 'signup_button'
         }}
         buttonprops2={{
           type: 'submit',
           value: 'user-login',
           onClick: login,
+          className: 'login_button'
         }}
       />
       <Intro />

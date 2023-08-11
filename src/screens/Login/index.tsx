@@ -44,7 +44,7 @@ const Login = () => {
     <Background classname='App' backgroundImage={imageUrl}>
       <Card classname='card'>
         <Header classname='login_header' content='Asset Mappr' />
-        <Header classname='subheader' content='Login' />
+        <Header classname='small_header' content='Login' />
         <form onSubmit={handleLogin}>
           <div className='input_container'>
             <InputField

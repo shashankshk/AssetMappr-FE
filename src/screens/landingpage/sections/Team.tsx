@@ -19,18 +19,20 @@ import pastmember5 from '../../../assets/images/assetmappr_Ruta.svg'
 
 const Team = () => {
   return (
-    <Frame id='team' classname='-5'
+    <Frame id='team' classname='-5' 
     leftchildren = {
         <>
         <Header
         classname='frame-5-header'
         content='Asset Mappr was created at Carnegie Mellon University'
+        size='medium'
         ></Header>
         <div className='description'>
         <Description
           classname='frame-5-description'
           content='The current team includes students from across disciplines like public policy, computer science and
                           product innovation.'
+          size = 'medium'
           ></Description>
         </div>
         </>
@@ -38,7 +40,7 @@ const Team = () => {
     rightchildren = {
         <>
              <div className='current-members'>
-            <Header classname='current-members-header' content='CURRENT MEMBERS'></Header>
+            <Header classname='current-members-header' content='CURRENT MEMBERS' size='small'></Header>
             <div className='current-members-images'>
               <Ellipse
                 classname='member-image'
@@ -100,7 +102,7 @@ const Team = () => {
           </div>
 
           <div className='past-members'>
-            <Header classname='current-members-header' content='PAST MEMBERS'></Header>
+            <Header classname='current-members-header' content='PAST MEMBERS' size='small'></Header>
             <div className='past-members-images'>
               <Ellipse
                 classname='member-image'

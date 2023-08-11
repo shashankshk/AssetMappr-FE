@@ -11,13 +11,15 @@ const Benefits = () => {
     <Frame id='benefits' classname='-4'
         leftchildren = {
             <>
-            <Header classname='frame-4-header' content='The benefits of a digital platform'></Header>
+            <Header classname='frame-4-header' content='The benefits of a digital platform' size='large'></Header>
+            <div>
             <IconList
                 classname='icon-frame-4-header-display'
                 iconProps={{ classname: 'icon', iconname: faCircleCheck }}
                 headerProps={{
                 classname: 'frame-4-icon-list-header',
                 content: 'Transparency and open access to meaningful information',
+                size: 'small'
                 }}
                 hasDescription={false}
             />
@@ -27,6 +29,7 @@ const Benefits = () => {
                 headerProps={{
                 classname: 'frame-4-icon-list-header',
                 content: 'Participatory community planning across demographics',
+                size: 'small'
                 }}
                 hasDescription={false}
             />
@@ -36,6 +39,7 @@ const Benefits = () => {
                 headerProps={{
                 classname: 'frame-4-icon-list-header',
                 content: 'Access to granular, need-based data.',
+                size: 'small'
                 }}
                 hasDescription={false}
             />
@@ -45,9 +49,11 @@ const Benefits = () => {
                 headerProps={{
                 classname: 'frame-4-icon-list-header',
                 content: 'Data is stored digitally for easy access and utilization',
+                size: 'small'
                 }}
                 hasDescription={false}
             />
+            </div>
             </>
         }
         rightchildren = {

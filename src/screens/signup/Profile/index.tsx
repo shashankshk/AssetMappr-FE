@@ -80,7 +80,7 @@ const ProfileInfoScreen = () => {
 
   return (
     <>
-      <Header classname='header' content='Profile Information' />
+      <Header classname='big_header' content='Profile Information' />
       <form onSubmit={handleProfileSubmit}>
         <div className='profile_container'>
           <InputLabel

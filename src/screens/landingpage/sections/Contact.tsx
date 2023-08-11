@@ -14,10 +14,11 @@ const Contact = () => {
       classname='-6'
       leftchildren={
         <>
-          <Header classname='frame-footer-header' content='We’d love to hear from you!'></Header>
+          <Header classname='frame-footer-header' content='We’d love to hear from you!' size='large'></Header>
           <Description
             classname='frame-footer-description'
             content='We’re currently building a new platform from the ground up and always looking for people to collaborate with in different ways. Send us your email with a message and we will get back to you.'
+            size='large'
           ></Description>
           <Footer
             classname='footer'
@@ -33,6 +34,7 @@ const Contact = () => {
                 type='text'
                 placeholder='Enter your email here'
                 className='frame-6-field'
+                size='medium'
               ></InputField>
               <TextArea
                 classname='frame-textarea'

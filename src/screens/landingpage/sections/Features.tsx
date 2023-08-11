@@ -16,8 +16,9 @@ const Features = () => {
         <Header
         classname='frame-3-header'
         content='What services do we provide to small communities?'
+        size='large'
         ></Header>
-        <Subheader classname='frame-3-subheader' content='OUR CURRENT COLLABORATORS'></Subheader>
+        <Subheader classname='frame-3-subheader' content='OUR CURRENT COLLABORATORS' size='small'></Subheader>
         <div className='frame-3-logos'>
             <Image classname='monvalley' imgname={monvalleylogo}></Image>
             <Image classname='citylogo' imgname={citypen}></Image>

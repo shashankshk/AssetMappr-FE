@@ -13,12 +13,13 @@ const Preregister = () => {
       classname='-2'
       leftchildren={
         <>
-          <Header classname='frame-2-header' content='Pre-register now!'></Header>
+          <Header classname='frame-2-header' content='Pre-register now!' size='large'></Header>
           <Description
             classname='frame-2-description'
             content=' If you believe that our innovative solution can make a positive impact, we are eager to connect with you.
                                     Take the first step by pre-registering today, and rest assured, we&#39;ll reach out to you promptly once
                                     our product is launched!'
+            size='medium'
           ></Description>
         </>
       }
@@ -29,16 +30,19 @@ const Preregister = () => {
               type='text'
               placeholder='Type in your community’s name'
               className='frame-2-small-field'
+              size='medium'
             ></InputField>
             <InputField
               type='text'
               placeholder='Enter your name'
               className='frame-2-small-field'
+              size='medium'
             ></InputField>
             <InputField
               type='text'
               placeholder='Enter your email here'
               className='frame-2-small-field'
+              size='medium'
             ></InputField>
             <TextArea
               classname='frame-textarea'

@@ -1,3 +1,34 @@
+.subheader{
+    font-style: normal;
+    line-height: normal;
+    @include font-family(primary);
+
+    &_large{
+        font-size: 1.5rem;
+    }
+
+    &_medium{
+        color: #2B2C33;
+        font-size: 1.2rem;
+        font-weight: 700;
+        @include dimensions-for-phone-only {
+            font-size: 1.25rem;
+        } 
+    }
+
+    &_small{
+        font-size: 0.9rem;
+        color: $small-subheader-color;
+        font-weight: 600;
+        @include styling-for-browser-size(900px){
+            font-size: 0.8rem;
+        }
+        @include dimensions-for-phone-and-tablet{
+            text-align: center;
+            font-size: 0.75rem;
+        }
+    }
+}
 .welcome2_subtitle {
     @extend %base-subtitle;
     @include styling-for-browser-size(600px) {
@@ -8,6 +39,7 @@
         font-size: 0.85rem;
     }
 }
+/*
 .subtitle {
     @extend %base-subtitle;
     @include styling-for-browser-size(600px) {
@@ -17,7 +49,7 @@
     @include styling-for-browser-size(300px) {
         font-size: 0.85rem;
     }
-}
+}*/
 p {
     @include font-family(secondary)
 }
@@ -32,6 +64,7 @@ p {
     }
 }
 
+/*
 .nav-title {
     color: #2B2C33;
     font-size: 1.5rem;
@@ -69,4 +102,4 @@ p {
         text-align: center;
         font-size: 0.75rem;
     }
-}
+}*/

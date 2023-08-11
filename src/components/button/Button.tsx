@@ -23,23 +23,40 @@ const Button: React.FC<ButtonProps> = ({
   flexible,
 }) => {
   return (
-    <button
+    <>
+    {onClick ? 
+      <button
       onClick={onClick}
       type={type}
       value={value}
       className={cx(
         'btn',
         { [`btn-${type}`]: type ?? true },
-        className,
         {
           [`btn_${size}`]: size ?? true,
         },
-        { [`btn_flexible`]: flexible },
+        { ['btn_flexible']: flexible },
+        className,
       )}
       disabled={disabled}
     >
       {children}
-    </button>
+    </button> : <button
+    type={type}
+    value={value}
+    className={cx(
+      'btn',
+      { [`btn-${type}`]: type ?? true },
+      {
+        [`btn_${size}`]: size ?? true,
+      },
+      { ['btn_flexible']: flexible },
+      className,
+    )}
+    disabled={disabled}
+  >
+    {children}
+  </button>} </>
   )
 }
 

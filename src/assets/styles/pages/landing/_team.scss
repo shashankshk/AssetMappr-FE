@@ -26,3 +26,12 @@
     display: grid;
     
 }
+
+.current-members-header{
+    color: #FF3D00;
+    margin-left: 2rem;
+    @include dimensions-for-phone-and-tablet{
+        text-align: center;
+        margin-left: 0;
+    }
+}

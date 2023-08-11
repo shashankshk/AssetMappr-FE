@@ -30,8 +30,8 @@ const CommunitySelection: FC<ParentProps> = ({ dataKey }) => {
 
   return (
     <>
-      <Header classname='welcome_title' content='Welcome to Asset Mappr!' />
-      <Subheader classname='subtitle' content='Select your community to get started' />
+      <Header classname='welcome_title' content='Welcome to Asset Mappr!' size='large'/>
+      <Subheader classname='subtitle' content='Select your community to get started' size='small'/>
       <form>
         <div className='select_community'>
           <SelectOption

@@ -13,9 +13,9 @@ const Footer: React.FC<Props> = ({
     content
 }) => {
     return (
-        <div className='footer-parent'>
+        
             <p className={classname}>{content}</p>
-        </div>
+        
     )
 };
 

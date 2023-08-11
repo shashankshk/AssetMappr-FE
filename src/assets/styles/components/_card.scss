@@ -1,11 +1,15 @@
 .card {
+    display: flex;
+    flex-direction: column;
     width: 35vw;
     background-color: white;
     border-radius: 0;
     padding: 2rem;
+    padding-top: 4rem;
     margin: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    gap: 2rem;
     @include styling-for-browser-size(900px) {
       width: 45vw;
     }
@@ -28,5 +32,8 @@
     @include styling-for-browser-size(420px) {
       width: 100vw;
       box-shadow: none;
+    }
+    @include dimensions-for-phone-only{
+      padding: 0 2rem 0 2rem;
     }
 }

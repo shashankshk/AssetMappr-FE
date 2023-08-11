@@ -1,0 +1,28 @@
+.frame-footer-header{
+    color: #FFF;
+    @include dimensions-for-phone-and-tablet{
+        font-size: 2rem;
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 3rem;
+    }
+}
+
+
+.frame-6-field{
+    border: 2px solid #A6A6A6;
+    background-color: #161C28;
+    color: white;
+    padding: auto;
+    box-sizing: border-box;
+    @include placeholder-styles {
+        color: #A6A6A6;
+    }
+    @include dimensions-for-tablet-only{
+        margin-left: 2rem;
+    }
+}
+
+.frame-6-right{
+    align-items: center;
+}

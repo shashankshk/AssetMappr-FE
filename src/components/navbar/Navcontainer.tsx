@@ -21,6 +21,7 @@ interface ComponentProp {
   classnameli?: string
   toggleView?: boolean
   buttontype?: 'button' | 'submit' | 'reset'
+  size?: 'large' | 'medium' | 'small'
 }
 const Navcontainer: React.FC<Props> = ({
   subheaderprops,
@@ -31,7 +32,7 @@ const Navcontainer: React.FC<Props> = ({
 }) => {
   return (
     <div className='navcontainer'>
-      <Subheader classname={subheaderprops.classname} content={subheaderprops.content}></Subheader>
+      <Subheader classname={subheaderprops.classname} content={subheaderprops.content} size={subheaderprops.size}></Subheader>
       <Hamburger classname={hamburgerprops.classname} onClick={hamburgerprops.onClick}></Hamburger>
       <div className={`nav-options ${!listprops.toggleView ? '' : 'active-options'}`}>
         <List

@@ -22,17 +22,18 @@ const Intro = () => {
       classname=''
       leftchildren={
         <>
-          <Subheader classname='frame-1-subheader' content='BETA APP' />
+          <Subheader classname='frame-1-subheader' content='BETA APP' size='small'/>
           <Header
             classname='frame-1-header'
-            content='Unlock your community&#39;s potential with Asset Mappr'
+            content='Unlock your community&#39;s potential with Asset Mappr' size='xlarge'
           />
           <Description
             classname='frame-1-description'
             content='Asset Mappr is a digital tool that helps you engage with your community and collect valuable information
                                   from them.'
+            size='medium'
           />
-          <Button type='submit' value='beta-app' onClick={loginSignup} size='large'>
+          <Button type='submit' value='beta-app' onClick={loginSignup} size='medium'>
             LOGIN TO THE BETA APP
           </Button>
           <ShortLink

@@ -21,6 +21,7 @@
 .nav-buttons{
     display: flex;
     align-items: center;
+    gap: 8px;
    
     @include dimensions-for-phone-and-tablet {
         display: none;
@@ -39,4 +40,10 @@
     @include dimensions-for-phone-and-tablet {
         display: flex;
     }
+}
+
+.signup_button, .login_button {
+    font-size: 15px;
+    min-height: fit-content;
+    padding: 8px 10px;
 }

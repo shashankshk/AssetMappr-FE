@@ -38,7 +38,6 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
   }, [navigate])
 
   const next = async (e: any) => {
-    e.preventDefault()
     const signUpData = {
       ...data[dataKey],
       userName: user,
@@ -65,12 +64,13 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
         setErrMsg('Registration failed')
       }
     }
+    e.preventDefault()
   }
 
   return (
     <>
       <Header classname='signup_header' content='Asset Mappr' />
-      <Header classname='subheader' content='Sign Up' />
+      <Header classname='small_header' content='Sign Up' />
       <form onSubmit={next}>
         <div className='input_container'>
           <InputField

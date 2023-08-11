@@ -1,3 +1,31 @@
+.description{
+    @include font-family(primary);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $primary-description-color;
+
+    &_large {
+
+    }
+
+    &_medium {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      @include dimensions-for-phone-and-tablet{
+        text-align: center;
+        align-self: center;
+        
+      }
+    }
+
+    &_small {
+      
+    }
+}
+
+/*
 .frame-1-description{
   @extend %landing-frame-styles-description;
   color: #000;
@@ -14,11 +42,11 @@
   @include styling-for-browser-size(750px) {
     font-size: 0.7rem;
     line-height: 1.375rem;
-  }*/
+  }
   @include dimensions-for-phone-and-tablet{
     text-align: center;
   }
-}
+}*/
 
 .icon-list-description{
   @extend %landing-frame-styles-description;
@@ -30,6 +58,7 @@
   }
 }
 
+/*
 .frame-5-description{
   @extend %landing-frame-styles-description;
   color: #000;
@@ -37,9 +66,9 @@
       align-self: center;
       text-align: center;
       font-size: 1rem;
-      /*margin-right: 3.5rem;*/
+      /*margin-right: 3.5rem;
   }
-}
+}*/
 
 .frame-footer-description{
   @extend %landing-frame-styles-description;
@@ -52,6 +81,7 @@
   }
 }
 
+/*
 .frame-2-description{
   @extend %landing-frame-styles-description;
   color: #FFF;
@@ -62,4 +92,4 @@
   @include dimensions-for-large-desktop-only{
     font-size: 1.2rem;
   }
-}
+}*/

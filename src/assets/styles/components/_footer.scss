@@ -26,6 +26,13 @@
         margin-left: 1rem;
         @include font-family(tertiary);
     }
+    @include dimensions-for-phone-only{
+        margin-left: 1.5rem;
+    }
+    @include dimensions-for-phone-only{
+        font-size: 0.65rem;
+        max-width: max-content;
+    }
     @include dimensions-for-tablet-only{
         align-self: center;
         margin-left: 1.5rem;

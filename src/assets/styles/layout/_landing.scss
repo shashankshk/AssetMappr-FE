@@ -40,11 +40,14 @@
     /*width: 50vw;*/
     margin-left: 5rem;
     margin-right: 2rem;
-    @include frame-right-dimensions-for-phone-tablet;
+    @include frame-right-dimensions-for-phone-tablet{
+        margin-right: 0;
+    }
 }
 
 .frame-3{
     @extend %base-frame;
+    align-items: flex-start;
     @include frame-dimensions-for-phone-tablet;
 }
 
@@ -60,7 +63,11 @@
 .frame-4{
     @extend %base-frame;
     background: #FBFBFB;
+    align-items: flex-start;
     @include frame-dimensions-for-phone-tablet;
+}
+.frame-left-4{
+    @extend %base-frame-left;
 }
 .frame-right-4{
     @extend %base-frame-right;
@@ -105,5 +112,7 @@
     @extend %base-frame-right;
     margin-left: 5rem;
     margin-right: 2rem;
-    @include frame-right-dimensions-for-phone-tablet;
+    @include frame-right-dimensions-for-phone-tablet{
+        margin-right: 0;
+    }
 }
