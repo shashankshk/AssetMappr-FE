@@ -34,7 +34,10 @@ ul.nav-options-list{
         }
     }
     @include dimensions-for-large-desktop-only{
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+    }
+    @include dimensions-for-monitor-only{
+        font-size: 1.4rem;
     }
 }
 

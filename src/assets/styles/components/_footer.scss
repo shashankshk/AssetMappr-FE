@@ -5,11 +5,28 @@
 }
 .footer{
     @extend %landing-footer-style;
-    font-size: 1rem;
-    margin-top: 6rem;
+    font-size: 0.8rem;
+    margin-top: 1.8rem;
     @include font-family(tertiary);
     @include dimensions-for-phone-and-tablet{
         display: none;
+    }
+    @include dimensions-for-ipad{
+        font-size: 0.6rem;
+        margin-top: 0.2rem;
+    }
+    @include styling-for-browser-size(950px){
+            display: none;
+    }
+    @include dimensions-for-small-desktop-only{
+        margin-top: 4rem;
+    }
+    @include dimensions-for-large-desktop-only{
+        margin-top: 3.5rem;
+    }
+    @include dimensions-for-monitor-only{
+        font-size: 1rem;
+        margin-top: 2.5rem;
     }
 }
 .mobile-footer{
@@ -27,7 +44,7 @@
         @include font-family(tertiary);
     }
     @include dimensions-for-phone-only{
-        margin-left: 1.5rem;
+        margin-left: 2rem;
     }
     @include dimensions-for-phone-only{
         font-size: 0.65rem;
@@ -35,6 +52,6 @@
     }
     @include dimensions-for-tablet-only{
         align-self: center;
-        margin-left: 1.5rem;
+        margin-left: 4rem;
     }
 }

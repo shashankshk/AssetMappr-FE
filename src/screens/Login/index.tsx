@@ -43,8 +43,10 @@ const Login = () => {
   return (
     <Background classname='App' backgroundImage={imageUrl}>
       <Card classname='card'>
-        <Header classname='login_header' content='Asset Mappr' />
-        <Header classname='small_header' content='Login' />
+        <div>
+        <Header classname='login_header' content='Asset Mappr' size='large'/>
+        <Header classname='small_header' content='Login' size='large'/>
+        </div>
         <form onSubmit={handleLogin}>
           <div className='input_container'>
             <InputField

@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/*
-h1 {
-    // font-family: 'Nunito', sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    @include font-family(secondary)
-}
-
-body {
-    min-height: 100vh;
-}
-*/
 .select_community {
     display: flex;
     flex-direction: column;
@@ -26,20 +14,6 @@ form {
     gap: 8px;
     padding-bottom: 1rem;
 }
-
-/*
-.welcome_title {
-    margin-top: 2rem;
-    color: black;
-    text-align: center;
-    font-size: 2.7rem;
-    @include styling-for-browser-size(321px){
-        font-size: 2.5rem;
-    }
-    @include styling-for-browser-size(300px){
-        font-size: 2rem;
-    }
-}*/
 
 .subtitle{
     color: black;

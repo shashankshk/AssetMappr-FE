@@ -39,6 +39,8 @@
 .active-buttons{
     @include dimensions-for-phone-and-tablet {
         display: flex;
+        gap:4px;
+        margin-top: 4px;
     }
 }
 
@@ -46,4 +48,10 @@
     font-size: 15px;
     min-height: fit-content;
     padding: 8px 10px;
+    @include dimensions-for-large-desktop-only{
+        font-size: 1.2rem;
+    }
+    @include dimensions-for-monitor-only {
+        font-size: 1.4rem;
+    }
 }

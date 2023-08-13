@@ -6,9 +6,7 @@
     @include dimensions-for-phone-and-tablet{
         font-size: 1rem;
     }
-    @include dimensions-for-large-desktop-only{
-      font-size: 1.2rem;
-    }
+    
   }
 
 .frame-2-small-field{
@@ -21,6 +19,6 @@
         color: #A6A6A6;
     }
     @include dimensions-for-tablet-only{
-        margin-left: 2rem;
+        //margin-left: 2rem;
     }
 }

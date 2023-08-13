@@ -18,7 +18,7 @@ const Contact = () => {
           <Description
             classname='frame-footer-description'
             content='We’re currently building a new platform from the ground up and always looking for people to collaborate with in different ways. Send us your email with a message and we will get back to you.'
-            size='large'
+            size='medium'
           ></Description>
           <Footer
             classname='footer'

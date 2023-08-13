@@ -1,10 +1,17 @@
 .monvalley{
     width: 8.0625rem;
     height: 4.5rem;
-    margin-right: 2rem;
     @include dimensions-for-phone-and-tablet{
         width: 4.75rem;
         height: 2.625rem;  
+    }
+    @include dimensions-for-small-desktop-only{
+        width: 10.0625rem;
+        height: 6.5rem;
+    }
+    @include dimensions-for-monitor-only{
+        width: 12.0625rem;
+        height: 8.5rem;
     }
 }
 .citylogo{
@@ -13,6 +20,14 @@
     @include dimensions-for-phone-and-tablet{
         width: 7.6875rem;
         height: 2.625rem;  
+    }
+    @include dimensions-for-small-desktop-only{
+        width: 15.375rem;
+        height: 6.625rem;
+    }
+    @include dimensions-for-monitor-only{
+        width: 17.375rem;
+        height: 8.625rem;
     }
 }
 .frame-1-image{
@@ -25,24 +40,29 @@
         width: 23rem;
         height: 22rem;
     }
-    /*
-    @include styling-for-browser-size(730px) {
-        width: 20rem;
-        height: 19rem;
-    }
-    @include styling-for-browser-size(650px){
-        width: 18rem;
-        height: 19rem;
-    }*/
     @include dimensions-for-phone-and-tablet{
         align-self: center;
         margin-left: 1rem;
         width: 22.625rem;
         height: 14.72631rem;   
     }
+    @include dimensions-for-ipad{
+        width: 25.625rem;
+        height: 20.72631rem;
+        padding-right: 2rem; 
+    }
+    @include styling-for-browser-size(800px){
+        width: 23.625rem;
+        height: 20.72631rem;
+        padding-right: 2rem; 
+    }
     @include dimensions-for-large-desktop-only{
-        width: 36.8125rem;
-        height: 30.75rem;
+        width: 40.8125rem;
+        height: 32.75rem;
+    }
+    @include dimensions-for-monitor-only{
+        width: 50.8125rem;
+        height: 38.75rem;
     }
 }
 .frame-4-image{
@@ -52,9 +72,21 @@
         height: 15.875rem;
         margin-left: 0;  
     }
-    @include dimensions-for-large-desktop-only{
+    @include dimensions-for-small-desktop-only{
         width: 35.625rem;
         height: 20.875rem;
+    }
+    @include dimensions-for-ipad{
+        width: 20.625rem;
+        height: 22.875rem;
+    }
+    @include dimensions-for-large-desktop-only{
+        width: 40.625rem;
+        height: 22.875rem;
+    }
+    @include dimensions-for-monitor-only{
+        width: 50.625rem;
+        height: 27.875rem;
     }
 }
 
@@ -65,5 +97,13 @@
     @include dimensions-for-phone-and-tablet{
         width: 6rem;
         height: 6rem;
+    }
+   @include dimensions-for-ipad{
+    width: 6rem;
+    height: 6rem;
+   }
+    @include dimensions-for-large-desktop-only{
+        width: 10.5rem;
+        height: 10.5rem;
     }
 }

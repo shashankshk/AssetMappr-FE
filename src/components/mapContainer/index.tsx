@@ -7,15 +7,18 @@ const MapContainer = () => {
   return (
     <div className='map-container'>
       <div className='map-container-topnav'>
+        <div className='map-container-options'>
         <SelectOption
           options={[{ label: 'Select category', value: '' }]}
-          initialLabel='Select Category'
+          initialLabel='Filter Assets by Category'
           initialValue=''
           name='Filter category'
+          classname='sel-category-option'
         />
-        <Button value='Add Comment' type='submit'>
+        <Button value='Add Comment' type='submit' size='medium' className='add-comment-button'>
           Add Comment
         </Button>
+      </div>
       </div>
       <Map />
     </div>

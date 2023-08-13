@@ -69,8 +69,10 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
 
   return (
     <>
-      <Header classname='signup_header' content='Asset Mappr' />
-      <Header classname='small_header' content='Sign Up' />
+    <div>
+      <Header classname='signup_header' content='Asset Mappr' size='large'/>
+      <Header classname='small_header' content='Sign Up' size='large'/>
+      </div>
       <form onSubmit={next}>
         <div className='input_container'>
           <InputField
@@ -141,7 +143,7 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
             ></ErrorMsg>
           </>
         </div>
-        <Button type='submit' value={'Sign Up'} flexible size='large' disabled={!checkFormValid()}>
+        <Button type='submit' value='Sign Up' flexible size='medium' className ='signup-button' disabled={!checkFormValid()}>
           {'Sign Up'}
         </Button>
       </form>

@@ -27,7 +27,12 @@
         }
         @include dimensions-for-tablet-only{
             align-self: center;
-            margin-left: 2rem;
+            
+        }
+        @include dimensions-for-monitor-only{
+            font-size: 22px;
+            padding: 1rem;
+            width: 27.625rem;
         }
     }
 }
@@ -48,35 +53,3 @@ input[type="date"] {
     @extend %input-field-open-on-prompt;
     margin-bottom: 1rem;
 }
-
-/*
-.frame-2-small-field{
-    @extend %landing-input-field;
-    @include placeholder-styles {
-        color: #A6A6A6;
-    }
-    @include dimensions-for-phone-only{
-        width: 19.5rem;
-        height: 3.75rem;
-        align-self: center;
-    }
-    @include dimensions-for-tablet-only{
-        align-self: center;
-        margin-left: 2rem;
-    }
-}
-
-.frame-6-field {
-    @extend %landing-input-field;
-    @include placeholder-styles {
-        color: #A6A6A6;
-    }
-    @include dimensions-for-phone-only{
-        width: 19.5rem;
-        height: 3.75rem;
-    }
-    @include dimensions-for-tablet-only{
-        align-self: center;
-        margin-left: 2rem;
-    }
-}*/

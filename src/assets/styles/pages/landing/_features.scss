@@ -1,7 +1,25 @@
 .frame-3-logos{
     display: flex;
     flex-direction: row;
+    gap: 2rem;
     @include dimensions-for-phone-and-tablet{
         justify-content: center;
+    }
+}
+
+
+.icon-list-header{
+    @extend %landing-header-style;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    @include dimensions-for-phone-and-tablet{
+        font-size: 1.25rem;
+        margin-left: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    @include dimensions-for-monitor-only{
+        font-size: 1.6rem;
     }
 }

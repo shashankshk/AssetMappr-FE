@@ -9,27 +9,22 @@
     &_xlarge{
         color: $primary-header-color;
         font-size: 55px;
-        /*
-        @include styling-for-browser-size(900px) {
-            font-size: 2.5rem;
-        }
-        @include styling-for-browser-size(805px) {
-            font-size: 2.2rem;
-        }
-        
-        @include styling-for-browser-size(750px) {
-            font-size: 2rem;
-        }
-        @include styling-for-browser-size(700px) {
-            font-size: 1.5rem;
-        }*/
         @include dimensions-for-phone-and-tablet{
             text-align: center;
             font-size: 2rem;
             
         }
+        @include dimensions-for-ipad{
+            font-size: 3rem;
+        }
+        @include dimensions-for-small-desktop-only{
+            font-size: 4rem;
+        }
         @include dimensions-for-large-desktop-only{
             font-size: 5rem;
+        }
+        @include dimensions-for-monitor-only{
+            font-size: 6rem;
         }
     }
 
@@ -40,8 +35,15 @@
             @include font-family(tertiary);
             font-size:40px;  
         }
+        @include dimensions-for-ipad{
+            font-size: 40px;
+           
+        }
         @include dimensions-for-large-desktop-only{
             font-size: 55px;
+        }
+        @include dimensions-for-monitor-only{
+            font-size: 65px;
         }
     }
 
@@ -51,6 +53,9 @@
             text-align: center;
             @include font-family(tertiary);
             font-size:30px;  
+        }
+        @include dimensions-for-ipad{
+            font-size: 35px;
         }
         @include dimensions-for-large-desktop-only{
             font-size: 45px;
@@ -65,36 +70,6 @@
         }
     }
 }
-
-/*
-.frame-3-header{
-    @extend %landing-header-style;
-    color: #191A15;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 2rem;
-    }
-    @include dimensions-for-large-desktop-only{
-        font-size: 4rem;
-        width: 50vw;
-    }
-}
-
-.welcome_title {
-    margin-top: 2rem;
-    color: black;
-    text-align: center;
-    font-size: 2.7rem;
-    @include styling-for-browser-size(321px){
-        font-size: 2.5rem;
-    }
-    @include styling-for-browser-size(300px){
-        font-size: 2rem;
-    }
-}*/
 
 .welcome3_title {
     color: slateblue;
@@ -111,35 +86,9 @@
     }
 }
 
-.signup_header{
-    color: black;
-    text-align: center;
-    @include styling-for-browser-size(450px){
-        display: none;
-    }
-    @include styling-for-browser-size(321px){
-        font-size: 2.5rem;
-    }
-    @include styling-for-browser-size(300px){
-        font-size: 2rem;
-    }
-}
-
 .login_header{
     color: black;
     text-align: center;
-    @include styling-for-browser-size(321px){
-        font-size: 2.5rem;
-    }
-    @include styling-for-browser-size(300px){
-        font-size: 2rem;
-    }
-}
-
-.small_header{
-    color: slateblue;
-    text-align: center;
-    margin-bottom: 3rem;
     @include styling-for-browser-size(321px){
         font-size: 2.5rem;
     }
@@ -174,150 +123,3 @@
         font-size: 1.5rem;
     }
 }
-
-/*
-.frame-1-header{
-    @extend %landing-header-style;
-    color: #2B2C33;
-    font-size: 3rem;
-    margin-bottom: 1.25rem;
-    @include styling-for-browser-size(900px) {
-        font-size: 2.5rem;
-    }
-    @include styling-for-browser-size(805px) {
-        font-size: 2.2rem;
-    }
-    /*
-    @include styling-for-browser-size(750px) {
-        font-size: 2rem;
-    }
-    @include styling-for-browser-size(700px) {
-        font-size: 1.5rem;
-    }
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 2rem;
-        
-    }
-    @include dimensions-for-large-desktop-only{
-        font-size: 5rem;
-    }
-}
-
-
-.frame-2-header{
-    @extend %landing-header-style;
-    color: #FFF;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 2rem;
-        @include font-family(tertiary)  
-    }
-    @include dimensions-for-large-desktop-only{
-        font-size: 3rem;
-    }
-}
-
-
-.frame-3-header{
-    @extend %landing-header-style;
-    color: #191A15;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 2rem;
-    }
-    @include dimensions-for-large-desktop-only{
-        font-size: 4rem;
-        width: 50vw;
-    }
-}*/
-
-.icon-list-header{
-    @extend %landing-header-style;
-    color: #000;
-    font-size: 1.5rem;
-    padding: 0.4rem;
-    @include dimensions-for-phone-and-tablet{
-        font-size: 1.25rem;
-        margin-left: 0;
-        padding: 0;
-        margin-bottom: 1rem;
-    }
-}
-
-/*
-.frame-4-header{
-    @extend %landing-header-style;
-    color: #191A15;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 2rem;
-        @include font-family(tertiary)  
-    }
-    @include dimensions-for-large-desktop-only{
-        font-size: 4rem;
-    }
-}
-
-.frame-4-icon-list-header{
-    @extend %landing-header-style;
-    color: #191A15;
-    font-size: 1rem;
-    @include font-family(tertiary);
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    @include dimensions-for-large-desktop-only{
-        font-size: 1.2rem;
-    }
-} 
-
-.frame-5-header{
-    @extend %landing-header-style;
-    color: #191A15;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 2rem;
-    }
-    @include dimensions-for-large-desktop-only{
-        font-size: 3rem;
-    }
-}
-
-.current-members-header{
-    @extend %landing-header-style;
-    color: #FF3D00;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.875rem;
-    margin-left: 2rem;
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 0.75rem;
-        margin-left: 0;
-    }
-}
-
-.frame-footer-header{
-    @extend %landing-header-style;
-    @include font-family(tertiary);
-    color: #FFF;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    @include dimensions-for-phone-and-tablet{
-        text-align: center;
-        font-size: 2rem;
-    }
-    @include dimensions-for-large-desktop-only{
-        font-size: 3rem;
-    }
-}*/

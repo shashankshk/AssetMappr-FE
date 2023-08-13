@@ -51,6 +51,8 @@
         @content;
     }
 }
+
+
 @mixin dimensions-for-monitor-only() {
     @media (min-width:1600px) {
         @content;
@@ -59,6 +61,12 @@
 
 @mixin dimensions-for-phone-and-tablet(){
     @media (max-width:750px) {
+        @content;
+    }
+}
+
+@mixin dimensions-for-ipad(){
+    @media (max-width:850px) {
         @content;
     }
 }

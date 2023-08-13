@@ -9,9 +9,8 @@
     flex-grow: 0;
     width: max-content;
     cursor: pointer;
-    // align-self: flex-start;
 
-    @include dimensions-for-phone-only {
+    @include dimensions-for-phone-and-tablet {
         width: 100%;
     }
 
@@ -19,6 +18,9 @@
         padding: 16px 20px;
         font-size: 18px;
         height: 56px;
+        @include dimensions-for-monitor-only{
+            font-size: 22px;
+        }
     }
 
     &_small {
@@ -29,6 +31,14 @@
     &_medium {
         padding: 12px 15px;
         font-size: 15px;
+        @include dimensions-for-large-desktop-only{
+            padding: 14px 18px;
+            font-size: 20px;
+        }
+        @include dimensions-for-monitor-only{
+            padding: 16px 20px;
+            font-size: 25px;
+        }
     }
 
     &_flexible {
@@ -53,41 +63,6 @@
     color: $text-color;
 }
 
-
-
-
-
-// .welcome_continue_button {
-//     @extend %base-button;
-
-//     @include dimensions-for-phone-only {
-//         width: 100%;
-//     }
-// }
-
-/*
-.signup_button {
-    @extend %base-button;
-    margin: 3rem auto 0 auto;
-
-    @include dimensions-for-phone-only {
-        width: 100%;
-    }
-}*/
-
-/*
-.login_button {
-    @extend %base-button;
-    margin: 0.95rem auto 2rem auto;
-    background-color: white;
-    color: black;
-    border: 0.25px solid black;
-
-    @include dimensions-for-phone-only {
-        width: 100%;
-    }
-}
-*/
 .signup2_button {
     @extend %base-button;
     margin: 1rem auto 1rem auto;
@@ -106,22 +81,7 @@
     }
 }
 
-.loginscreen_button {
-    @extend %base-button;
-    padding: $button-padding;
-    border: $button-border;
-    margin: 1rem auto 1rem auto;
-    width: 90%;
-    color: white;
 
-    &:hover {
-        @include hover-effect;
-    }
-
-    @include dimensions-for-phone-only {
-        width: 100%;
-    }
-}
 
 .continue2_button {
     @extend %base-button;
@@ -189,68 +149,5 @@
     }
     @include dimensions-for-large-desktop-only{
         font-size: 1.1rem;
-    }
-}
-
-.frame-1-button {
-    @extend %base-landing-button;
-    padding: 0.5rem;
-    color: #FFF;
-    text-align: center;
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    width: 17.5rem;
-    @include styling-for-browser-size(900px){
-        width: 10rem;
-        font-size: 0.7rem;
-        line-height: 1rem;
-    }
-    @include dimensions-for-phone-and-tablet {
-        width: 14.625rem;
-        font-size: 1rem;
-        align-self: center;
-        margin-bottom: 1.25rem;
-    }
-}
-
-.frame-2-button {
-    @extend %base-landing-button;
-    width: 25.625rem;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    color: #FFF;
-    text-align: center;
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    align-self: center;
-
-    @include dimensions-for-phone-only {
-        width: 19.5rem;
-        height: 3.5rem;
-        margin-bottom: 1rem;
-    }
-    @include dimensions-for-tablet-only{
-        margin-left: 2rem;
-    }
-}
-
-.submit-button {
-    @extend %base-landing-button;
-    width: 25.625rem;
-    height: 3.5rem;
-    color: #FFF;
-    text-align: center;
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    align-self: center;
-    margin-top: 0.5rem;
-
-    @include dimensions-for-phone-only {
-        width: 19.5rem;
-        height: 3.5rem;
-        margin-top: 0.5rem;
-    }
-    @include dimensions-for-tablet-only{
-        margin-left: 2rem;
     }
 }

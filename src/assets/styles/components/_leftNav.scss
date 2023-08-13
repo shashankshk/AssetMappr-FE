@@ -4,23 +4,59 @@
     display: block;
     border-right: 1px solid #EEF2F6;
     background: #FFF;
+    border: 2px solid #EEF2F6;
 
     .left-nav-top {
 
         font-size: 16px !important;
-        padding: 20px 30px;
-
+        padding: 20px 40px 20px 10px;
+        
         .app-title {
             margin: auto;
             font-family: Roboto, sans-serif !important;
-            font-size: 16px !important;
+            font-size: 14px !important;
             font-weight: 700 !important;
+            text-align: center;
         }
 
-        h2 {
+        .app-subtitle {
             margin: auto;
             font-size: 16px;
             font-weight: 400;
+            text-align: center;
         }
+    }
+    .nav-line{
+        border: 1px solid #EEF2F6;
+    }
+    .left-nav-items{
+        margin-top: 20px;
+        .left-nav-ind-item{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 2px;
+            gap:8px;
+            .nav-link{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    border-radius: 8px;
+                    background: rgba(94, 71, 224, 0.16);
+                    width: fit-content;
+                }
+                .left-nav-image{
+                    width: 15px;
+                }
+                .left-nav-header{
+                    font-family: Roboto, sans-serif !important;
+                    font-size: 14px !important;
+                    font-weight: 700 !important;
+                }
+            }
+           
+            
+        }
+        
     }
 }

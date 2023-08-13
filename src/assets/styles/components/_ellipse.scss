@@ -6,6 +6,9 @@
         align-self: center;
         padding: 1rem;
     }
+    @include dimensions-for-ipad{
+        padding: 1rem;
+    }
 }
 .caption-text{
     color: #000;
@@ -17,5 +20,8 @@
     @include font-family(primary);
     @include dimensions-for-phone-and-tablet{
         font-size: 0.75rem;
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 1.1rem;
     }
 }

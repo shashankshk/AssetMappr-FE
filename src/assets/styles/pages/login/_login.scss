@@ -1,0 +1,16 @@
+.loginscreen_button {
+    @extend %base-button;
+    padding: $button-padding;
+    border: $button-border;
+    margin: 1rem auto 1rem auto;
+    width: 90%;
+    color: white;
+
+    &:hover {
+        @include hover-effect;
+    }
+
+    @include dimensions-for-phone-only {
+        width: 100%;
+    }
+}
