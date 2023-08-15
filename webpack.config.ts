@@ -56,11 +56,6 @@ const config: Configuration = {
     new CopyWebpackPlugin({
       patterns: [{ from: 'public' }],
     }),
-    // new webpack.DefinePlugin({
-    //   'process.env.GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
-    //   'process.env.BASE_API_URL': JSON.stringify(process.env.BASE_API_URL),
-    //   'process.env.BASE_MAP_ID': JSON.stringify(process.env.BASE_MAP_ID),
-    // }),
   ],
   devServer: {
     port: 3000,
