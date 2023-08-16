@@ -57,6 +57,7 @@ jobs:
             source .env
             docker stop $CONTAINER || true
             docker rm $CONTAINER || true
+            docker image prune -a --force --filter "until=240h"
             docker build -t $IMAGE .
             docker run -d -p 80:80 --name $CONTAINER $IMAGE
           '
