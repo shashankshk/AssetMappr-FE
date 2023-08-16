@@ -35,6 +35,8 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
   }
   useEffect(() => {
     console.log(data[dataKey])
+    console.log(BASE_URL)
+    console.log(process.env.BASE_API_URL)
     if (!data[dataKey]) {
       navigate('/signup')
     }
@@ -49,7 +51,6 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
       mobile: phoneNumber,
       email,
       password,
-      //comGeoId:'4250408'
     }
     addData(dataKey, signUpData)
     try {
