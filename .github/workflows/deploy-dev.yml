@@ -64,4 +64,4 @@ jobs:
           # Backend server details
           echo "Connected to - $BASE_API_URL"
           # Frontend server details
-          echo "Serving on - $HOSTNAME"
+          echo "Serving on - http://$HOSTNAME"
