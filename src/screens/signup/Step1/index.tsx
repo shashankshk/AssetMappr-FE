@@ -28,6 +28,9 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
     if (!user) return false
     if (!password || password.length < 8) return false
     if (password && reenteredPassword && password !== reenteredPassword) return false
+    if (!designation) return false
+    if (!email) return false
+    if (!reenteredPassword) return false
     return true
   }
   useEffect(() => {
@@ -43,7 +46,7 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
     const signUpData = {
       ...data[dataKey],
       name: user,
-      type: designation,
+      type: 'planner',
       mobile: phoneNumber,
       email,
       password,
@@ -71,9 +74,9 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
 
   return (
     <>
-    <div>
-      <Header classname='signup_header' content='Asset Mappr' size='large'/>
-      <Header classname='small_header' content='Sign Up' size='large'/>
+      <div>
+        <Header classname='signup_header' content='Asset Mappr' size='large' />
+        <Header classname='small_header' content='Sign Up' size='large' />
       </div>
       <form onSubmit={next}>
         <div className='input_container'>
@@ -145,7 +148,14 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
             ></ErrorMsg>
           </>
         </div>
-        <Button type='submit' value='Sign Up' flexible size='medium' className ='signup-button' disabled={!checkFormValid()}>
+        <Button
+          type='submit'
+          value='Sign Up'
+          flexible
+          size='medium'
+          className='signup-button'
+          disabled={!checkFormValid()}
+        >
           {'Sign Up'}
         </Button>
       </form>

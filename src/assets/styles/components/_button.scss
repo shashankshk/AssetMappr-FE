@@ -18,7 +18,8 @@
         padding: 16px 20px;
         font-size: 18px;
         height: 56px;
-        @include dimensions-for-monitor-only{
+
+        @include dimensions-for-monitor-only {
             font-size: 22px;
         }
     }
@@ -31,11 +32,13 @@
     &_medium {
         padding: 12px 15px;
         font-size: 15px;
-        @include dimensions-for-large-desktop-only{
+
+        @include dimensions-for-large-desktop-only {
             padding: 14px 18px;
             font-size: 20px;
         }
-        @include dimensions-for-monitor-only{
+
+        @include dimensions-for-monitor-only {
             padding: 16px 20px;
             font-size: 25px;
         }
@@ -46,6 +49,11 @@
         flex-shrink: 1;
         align-self: auto;
         width: 100%;
+    }
+
+    &_disabled {
+        opacity: 0.5;
+        pointer-events: none;
     }
 }
 
@@ -112,7 +120,8 @@
     padding: 0.1rem;
     width: 7rem;
     margin-top: 0.5rem;
-    @include dimensions-for-large-desktop-only{
+
+    @include dimensions-for-large-desktop-only {
         font-size: 1.1rem;
     }
 }
@@ -127,17 +136,18 @@
     margin-top: 0.5rem;
 
     @include dimensions-for-phone-and-tablet {
-            width: 100%;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-            transition: box-shadow 0.3s ease-in-out;
-            width: 100%;
-            margin-right: 0;
+        width: 100%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        transition: box-shadow 0.3s ease-in-out;
+        width: 100%;
+        margin-right: 0;
 
         &:hover {
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
         }
     }
-    @include dimensions-for-large-desktop-only{
+
+    @include dimensions-for-large-desktop-only {
         font-size: 1.1rem;
     }
 }

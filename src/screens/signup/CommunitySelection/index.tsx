@@ -24,14 +24,14 @@ const CommunitySelection: FC<ParentProps> = ({ dataKey }) => {
   //   }
   // }, [data, navigate, resetData])
   const onClick = async () => {
-    addData(dataKey, { communityId: selectedOption })
+    addData(dataKey, { comGeoId: selectedOption })
     navigate('/signup/basicinfo')
   }
 
   return (
     <>
-      <Header classname='welcome_title' content='Welcome to Asset Mappr!' size='large'/>
-      <Subheader classname='subtitle' content='Select your community to get started' size='small'/>
+      <Header classname='welcome_title' content='Welcome to Asset Mappr!' size='large' />
+      <Subheader classname='subtitle' content='Select your community to get started' size='small' />
       <form>
         <div className='select_community'>
           <SelectOption
