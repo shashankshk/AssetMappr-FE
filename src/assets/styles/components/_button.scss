@@ -104,16 +104,6 @@
     }
 }
 
-.profile_continue_button {
-    @extend %base-button;
-    margin: 0 auto 1rem auto;
-
-    @include dimensions-for-phone-only {
-        width: 100%;
-    }
-}
-
-
 .user-login {
     @extend %base-landing-button;
     border: 1px solid black;

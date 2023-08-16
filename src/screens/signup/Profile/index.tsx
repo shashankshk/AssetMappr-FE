@@ -47,6 +47,7 @@ const ProfileInfoScreen = () => {
 
   const handleProfileSubmit = async (e: any) => {
     e.preventDefault()
+    /*
     try {
       const profileData = {
         userId: data.userId,
@@ -61,21 +62,16 @@ const ProfileInfoScreen = () => {
         navigate('/login')
       }
     } catch (err: any) {
-      // if we didn't hear back from the server at all
-      // if (!err.response) {
-      //   setErrMsg('Server down. Please try again later.')
-      // } else if (err.response?.status === 409) {
-      //   setErrMsg('User already created. Please sign in.')
-      // } else {
-      //   setErrMsg('Registration failed')
-      // }
-    }
-    navigate('/home')
+  
+    }*/
+    navigate('/login')
   }
 
   const [race, setRace] = useState('')
   const [sex, setSex] = useState('')
   const [dob, setDob] = useState('')
+  const [userchoicesex, setUserChoiceSex] = useState('')
+  const [userchoicerace, setUserChoiceRace] = useState('')
   const [ethnicity, setEthnicity] = useState('')
 
   return (
@@ -85,7 +81,7 @@ const ProfileInfoScreen = () => {
         <div className='profile_container'>
           <InputLabel
             htmlfor='date_of_birth'
-            classname='required_dob'
+            classname='profile_label'
             content='1. What is your date of birth?'
           />
           <InputField
@@ -98,7 +94,7 @@ const ProfileInfoScreen = () => {
             onchange={(e) => setDob(e.target.value)}
           />
 
-          <InputLabel htmlfor='ethnicity' content='2. What is your ethnicity? (Optional)' />
+          <InputLabel htmlfor='ethnicity' content='2. What is your ethnicity? (Optional)' classname='profile_label' />
           <SelectOption
             classname='select_ethnicity'
             id='ethnicity'
@@ -109,7 +105,7 @@ const ProfileInfoScreen = () => {
             options={ethnicityOptions}
           ></SelectOption>
 
-          <InputLabel htmlfor='race' content='3. What is your race? (Optional)' />
+          <InputLabel htmlfor='race' content='3. What is your race? (Optional)' classname='profile_label'/>
           <SelectOption
             classname='select_race'
             id='race'
@@ -125,11 +121,12 @@ const ProfileInfoScreen = () => {
               type='text'
               className='self_race'
               placeholder='Please tell us what you identify as (optional)'
-              onchange={(e) => setRace(e.target.value)}
+              value={userchoicerace}
+              onchange={(e) => setUserChoiceRace(e.target.value)}
             />
           )}
 
-          <InputLabel htmlfor='sex' content='4. What is your sex? (Optional)' />
+          <InputLabel htmlfor='sex' content='4. What is your sex? (Optional)' classname='profile_label'/>
           <SelectOption
             classname='select_sex'
             id='sex'
@@ -145,7 +142,8 @@ const ProfileInfoScreen = () => {
               type='text'
               className='self_sex'
               placeholder='Please tell us which (optional)'
-              onchange={(e) => setSex(e.target.value)}
+              value={userchoicesex}
+              onchange={(e) => setUserChoiceSex(e.target.value)}
             />
           )}
         </div>

@@ -38,14 +38,16 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
   }, [navigate])
 
   const next = async (e: any) => {
+    console.log('am I here?')
     e.preventDefault()
     const signUpData = {
       ...data[dataKey],
-      userName: user,
-      designation,
-      phoneNumber,
+      name: user,
+      type: designation,
+      mobile: phoneNumber,
       email,
       password,
+      comGeoId:'4250408'
     }
     addData(dataKey, signUpData)
     try {

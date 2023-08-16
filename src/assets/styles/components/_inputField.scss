@@ -37,6 +37,7 @@
     }
 }
 
+/*
 input[type="date"] {
     border: 1px solid black;
     font-size: 15px;
@@ -44,12 +45,4 @@ input[type="date"] {
     @include styling-for-browser-size(450px){
         width: 98%;
     }
-}
-
-.self_race{
-    @extend %input-field-open-on-prompt;
-}
-.self_sex{
-    @extend %input-field-open-on-prompt;
-    margin-bottom: 1rem;
-}
+}*/

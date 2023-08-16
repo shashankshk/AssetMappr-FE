@@ -30,9 +30,10 @@ const Map = () => {
           zoom={15}
           options={{ mapId: process.env.BASE_MAP_ID }}
         >
-          {mapData.map((dataPoint: any) => {
+          {mapData.map((dataPoint: any, index: number) => {
             return (
               <MarkerF
+                key={index}
                 position={{
                   lat: parseFloat(dataPoint.latitude),
                   lng: parseFloat(dataPoint.longitude),

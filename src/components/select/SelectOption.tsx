@@ -37,7 +37,7 @@ const SelectOption: React.FC<Props> = ({
       onChange={onchange}
       className={cx('select-primary', { [`select-primary_${size}`]: true }, classname)}
     >
-      <option style={{ display: display }} value={initialValue} selected>
+      <option style={{ display: display }} value={initialValue}>
         {initialLabel}
       </option>
       {options.map((option) => (
