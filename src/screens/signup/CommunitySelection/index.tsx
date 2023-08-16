@@ -4,50 +4,57 @@ import Button from '../../../components/button/Button'
 import SelectOption from '../../../components/select/SelectOption'
 import Header from '../../../components/title/header/Header'
 import Subheader from '../../../components/title/subheader/Subheader'
+import { COMMUNITIES } from '../../../utils/constants'
+import { useSignup } from '../SignUpContext'
 // import { useSignup } from '../'
 
 type ParentProps = {
-  setSelectedCommunity: Dispatch<SetStateAction<string>>
+  dataKey: string
 }
 // The first welcome component which prompts user to enter name of community.
-const CommunitySelection: FC<ParentProps> = ({ setSelectedCommunity }) => {
+const CommunitySelection: FC<ParentProps> = ({ dataKey }) => {
   const [selectedOption, setSelectedOption] = useState('')
   const navigate = useNavigate()
+  const { data, addData, resetData } = useSignup()
   // const { setSelectedCommunity } = useSignup()
-  const options = [
-    { label: 'Uniontown', value: 'uniontown' },
-    { label: 'Test Community', value: 'testcommunity' },
-    { label: 'Monongahela', value: 'monongahela' },
-  ]
-
+  // useEffect(() => {
+  //   if (!data[dataKey]) {
+  //     resetData()
+  //     navigate('/signup')
+  //   }
+  // }, [data, navigate, resetData])
   const onClick = async () => {
+    addData(dataKey, { comGeoId: selectedOption })
     navigate('/signup/basicinfo')
   }
 
   return (
     <>
-      <Header classname='welcome_title' content='Welcome to Asset Mappr!' />
-      <Subheader classname='subtitle' content='Select your community to get started' />
+      <Header classname='welcome_title' content='Welcome to Asset Mappr!' size='large' />
+      <Subheader classname='subtitle' content='Select your community to get started' size='small' />
       <form>
         <div className='select_community'>
           <SelectOption
+            size='large'
             name='community'
             id='community'
             onchange={(e) => {
               setSelectedOption(e.target.value)
-              setSelectedCommunity(e.target.value)
+              // setSelectedCommunity(e.target.value)
             }}
             initialValue=''
             initialLabel='Select one'
-            options={options}
+            options={COMMUNITIES}
           ></SelectOption>
         </div>
         <Button
           type='submit'
           value='Continue'
-          className={`welcome_continue_button ${selectedOption ? '' : 'disabled'}`}
+          className={`${selectedOption ? '' : 'disabled'}`}
           onClick={onClick}
           disabled={!selectedOption}
+          flexible
+          size='large'
         >
           Continue
         </Button>

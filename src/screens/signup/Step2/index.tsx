@@ -13,7 +13,7 @@ const Step2: FC<ParentProps> = ({ baseProps }) => {
   return (
     <>
       <Header classname='signup_header' content='Asset Mappr' />
-      <Header classname='subheader' content='Sign Up' />
+      <Header classname='small_header' content='Sign Up' />
       <form onSubmit={handleSubmission}>
         <div className='input_container'>
           <InputField
@@ -40,11 +40,7 @@ const Step2: FC<ParentProps> = ({ baseProps }) => {
             label='Must match the first password input field.'
           />
         </div>
-        <Button
-          type='submit'
-          value='Sign Up'
-          className={`signup2_button ${validMatch ? '' : 'disabled'} `}
-        >
+        <Button type='submit' value='Sign Up' disabled={!validMatch} flexible size='large'>
           Sign Up
         </Button>
       </form>

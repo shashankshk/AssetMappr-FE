@@ -1,9 +1,11 @@
+
 .icon-header-display{
     display: flex;
     flex-direction: row;
     margin-left: 0.5rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         flex-direction: column;
+        margin-left: 0;
     }
 }
 
@@ -14,7 +16,8 @@
 .icon-item-description{
     margin-left: 2rem;
     margin-bottom: 2rem;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         margin-left: 0;
     }
+   
 }

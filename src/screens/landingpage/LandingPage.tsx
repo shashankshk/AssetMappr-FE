@@ -40,36 +40,41 @@ const LandingPage = () => {
 
   return (
     <Background classname='landing-page' id='landing'>
-        <Navcontainer subheaderprops={{
+      <Navcontainer
+        subheaderprops={{
+          size: 'medium',
           classname: 'nav-title',
           content: 'Asset Mappr',
-        }} hamburgerprops={{
+        }}
+        hamburgerprops={{
           classname: 'bar',
-          onClick: displayToggleView
-        }} listprops={{
+          onClick: displayToggleView,
+        }}
+        listprops={{
           classname: 'nav-options-list',
           classnameli: 'nav-options-items',
           contentlist: items,
-          toggleView: toggleView
-        }} buttonprops1={{
-          classname: 'user-signup',
-          buttontype: 'button',
-          content: 'Signup',
-          value: 'user-signup',
-          onClick: signup
-        }} buttonprops2={{
-          classname: 'user-login',
+          toggleView: toggleView,
+        }}
+        buttonprops1={{
           type: 'button',
-          content: 'User Login',
+          value: 'user-signup',
+          onClick: signup,
+          className: 'signup_button'
+        }}
+        buttonprops2={{
+          type: 'submit',
           value: 'user-login',
-          onClick: login
-        }}/>
-      <Intro/>
-      <Preregister/>
-      <Features/>
-      <Benefits/>
-      <Team/>
-      <Contact/>
+          onClick: login,
+          className: 'login_button'
+        }}
+      />
+      <Intro />
+      <Preregister />
+      <Features />
+      <Benefits />
+      <Team />
+      <Contact />
     </Background>
   )
 }

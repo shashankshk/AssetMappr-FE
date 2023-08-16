@@ -1,0 +1,9 @@
+.frame-4-icon-list-header{
+    @include font-family(tertiary);
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    @include dimensions-for-large-desktop-only{
+        font-size: 1.2rem;
+    }
+}

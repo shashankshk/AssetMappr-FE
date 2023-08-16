@@ -1,29 +1,51 @@
-.frame-1-description{
-  @extend %landing-frame-styles-description;
-  color: #000;
-  margin-bottom: 1.25rem;
-  font-weight: 600;
-  @include dimensions-for-phone-only{
-    text-align: center;
-  }
+.description{
+    @include font-family(primary);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $primary-description-color;
+
+    &_large {
+      // FIX: to be defined
+    }
+
+    &_medium {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      @include dimensions-for-phone-and-tablet{
+        text-align: center;
+        align-self: center;
+      }
+      @include dimensions-for-small-desktop-only{
+        font-size: 17px;
+        line-height: 27px;
+      }
+      @include dimensions-for-large-desktop-only{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include dimensions-for-monitor-only{
+        font-size: 25px;
+        line-height: 35px;
+      }
+    }
+
+    &_small {
+      // FIX: to be defined
+    }
 }
 
 .icon-list-description{
   @extend %landing-frame-styles-description;
   color: #000;
   font-weight: 400;
+  margin-left: 1rem;
   @include dimensions-for-phone-only{
     margin-left: 0.5rem;
   }
-}
-
-.frame-5-description{
-  @extend %landing-frame-styles-description;
-  color: #000;
-  @include dimensions-for-phone-only{
-      text-align: center;
-      font-size: 1rem;
-      margin-right: 3.5rem;
+  @include dimensions-for-monitor-only{
+    font-size: 1.4rem;
   }
 }
 
@@ -31,18 +53,9 @@
   @extend %landing-frame-styles-description;
   color: #FFF;
   margin-bottom: 3rem;
-  @include dimensions-for-phone-only{
+  @include dimensions-for-phone-and-tablet{
     text-align: center;
     font-size: 1rem;
     margin-bottom: 0;
-  }
-}
-
-.frame-2-description{
-  @extend %landing-frame-styles-description;
-  color: #FFF;
-  @include dimensions-for-phone-only{
-      text-align: center;
-      font-size: 1rem;
   }
 }

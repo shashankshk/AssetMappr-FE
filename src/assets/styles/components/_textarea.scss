@@ -9,4 +9,9 @@
         height: 10.75rem;
         align-self: center;
     }
+    @include dimensions-for-monitor-only{
+        font-size: 22px;
+        padding: 1rem;
+        width: 27.625rem;
+    }
 }

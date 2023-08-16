@@ -53,6 +53,7 @@ package-lock.json
 .webpack.json
 src/**/*.js
 src/**/*.map
+.env
 
 # Doc #
 /doc/

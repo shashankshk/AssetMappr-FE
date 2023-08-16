@@ -7,7 +7,7 @@ import HomeScreen from './screens/Home'
 import { AuthProvider } from './components/authProvider'
 import ProtectedRoute from './components/protectedRoute'
 import LandingPage from './screens/landingpage/LandingPage'
-import './assets/styles/main.scss';
+import './assets/styles/main.scss'
 export default function App() {
   return (
     <AuthProvider>

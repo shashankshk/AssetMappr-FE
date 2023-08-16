@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-%base-button{
+%base-button {
     display: block;
     margin: 3rem auto 2rem auto;
     margin-top: 0;
@@ -16,7 +16,7 @@
     border: 2px solid transparent;
 }
 
-%base-landing-button{
+%base-landing-button {
     border-radius: 0.5rem;
     font-size: 0.9rem;
     font-family: 'Roboto', sans-serif;
@@ -28,14 +28,17 @@
     cursor: pointer;
     background: #5E47E0;
 }
-%base-frame{
+
+%base-frame {
     display: flex;
+    align-items: center;
     width: 100vw;
     padding: 3.5rem;
     justify-content: space-between;
     flex-direction: row;
 }
-%base-frame-phone{
+
+%base-frame-phone {
     flex-direction: column;
     justify-content: center;
     width: 100vw;
@@ -43,18 +46,21 @@
     align-items: center;
     margin-bottom: 1rem;
 }
-%base-frame-left{
+
+%base-frame-left {
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    gap: 25px;
+    /*width: 45vw;*/
 }
 %base-frame-right{
-    width: 50vw;
+    /*width: 50vw;*/
     margin-left: 1rem;
     position: relative;
-    margin-right: 2rem;
+    /*margin-right: 2rem;*/
 }
-%big-textarea{
+
+%big-textarea {
     background-color: #161C28;
     border-radius: 0.5rem;
     border: 2px solid #A6A6A6;
@@ -63,32 +69,37 @@
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.875rem; /* 166.667% */
+    line-height: 1.875rem;
+    /* 166.667% */
     height: 10.75rem;
     padding: 0.5rem;
     margin: 0.5rem auto;
     justify-self: center;
 }
-%base-subtitle{
+
+%base-subtitle {
     margin-top: 1rem;
     color: black;
     text-align: center;
 }
-%landing-frame-font-styles-subheader{
+
+%landing-frame-font-styles-subheader {
     color: #FF3D00;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.875rem;
 }
-%landing-frame-styles-description{
+
+%landing-frame-styles-description {
     font-size: 1.125rem;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.875rem;
 }
-%landing-input-field{
+
+%landing-input-field {
     width: 25.625rem;
     height: 3.75rem;
     border-radius: 0.5rem;
@@ -98,24 +109,28 @@
     padding: auto;
     box-sizing: border-box;
 }
-%input-field-open-on-prompt{
+
+%input-field-open-on-prompt {
     margin-top: 0;
-    font-size: 15px;
+    font-size: 14px;
     width: 95%;
     margin-bottom: 1rem;
 }
-%landing-header-style{
-    font-family: 'Roboto',sans-serif;
+
+%landing-header-style {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-%landing-frame-image-style{
+
+%landing-frame-image-style {
     width: 30.8125rem;
-    height: 23.75rem;
-    margin-left: 4rem;
+    height: 24.75rem;
+    margin-left: 1rem;
 }
-%landing-footer-style{
+
+%landing-footer-style {
     color: #FFF;
     font-style: normal;
     font-weight: 500;

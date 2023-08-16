@@ -2,5 +2,35 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    gap:10px;
+}
+.self_race, .self_sex{
+    @extend %input-field-open-on-prompt;
+    font-size: 14px;
+    width: 94%;
+    @include font-family(secondary);
+}
+.self_sex{
+    margin-bottom: 1rem;
+}
+.profile_dateofbirth{
+    font-size: 16px;
+    width: 96%;
+}
+.select_ethnicity,.select_race,.select_sex{
+    font-size: 16px;
+    width: 96%;
+    @include font-family(secondary);
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    @include styling-for-browser-size(450px){
+        width: 98%;
+    }
+}
+.profile_continue_button{
+    width: 100%;
+}
+.profile_label{
+    @include font-family(secondary);
 }
 

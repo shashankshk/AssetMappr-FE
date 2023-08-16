@@ -2,14 +2,13 @@
 
 @import "base/typography";
 
-@import "layout/landing";
+@import "layout/landing", "layout/mapContainer";
 
-@import "components/background" , "components/button" , "components/card", "components/description",
+@import "components/background", "components/button", "components/card", "components/description",
 "components/errorMsg", "components/ellipse", "components/footer", "components/icon",
 "components/inputField", "components/inputLabel", "components/iconList", "components/list", "components/hamburger",
 "components/selectOption", "components/shortLink", "components/header", "components/subheader",
-"components/image", "components/navcontainer", "components/textarea";
+"components/image", "components/navcontainer", "components/textarea", "components/map", "components/leftNav";
 
-@import  "pages/landing/features", "pages/landing/team","pages/signup/signup", "pages/signup/communitySelection",
-"pages/signup/disclaimer", "pages/signup/profileInfo"
-
+@import "pages/landing/features", "pages/landing/team", "pages/landing/preregister", "pages/landing/benefits", "pages/landing/contact", "pages/signup/signup", "pages/signup/communitySelection",
+"pages/signup/disclaimer", "pages/signup/profileInfo", "pages/login/login"

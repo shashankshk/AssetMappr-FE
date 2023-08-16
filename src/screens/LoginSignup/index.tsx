@@ -38,10 +38,10 @@ const WelcomeScreen = () => {
       <Card classname='card'>
         <Header classname='welcome_title' content='Welcome to Asset Mappr!' />
         <Subheader classname='welcome2_subtitle' content='Login or Sign Up to get started' />
-        <Button type='submit' value='Sign Up' className='signup_button' onClick={signup}>
+        <Button type='submit' value='Sign Up' size='large' flexible onClick={signup}>
           Sign Up
         </Button>
-        <Button type='submit' value='Login' className='login_button' onClick={login}>
+        <Button type='button' value='Login' size='large' flexible onClick={login}>
           Login
         </Button>
         <ShortLink href='' classname='skip' label='Skip for now'></ShortLink>

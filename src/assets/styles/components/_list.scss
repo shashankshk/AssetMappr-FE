@@ -8,7 +8,7 @@ ul.nav-options-list{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         flex-direction: column;
     }
 }
@@ -25,13 +25,19 @@ ul.nav-options-list{
     margin-left: 2rem;
     margin-top: 0.5rem;
     @include font-family(primary);
-    @include dimensions-for-phone-only{
+    @include dimensions-for-phone-and-tablet{
         margin-left: 0;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
         transition: box-shadow 0.3s ease-in-out;
         &:hover{
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
         }
+    }
+    @include dimensions-for-large-desktop-only{
+        font-size: 1.15rem;
+    }
+    @include dimensions-for-monitor-only{
+        font-size: 1.4rem;
     }
 }
 

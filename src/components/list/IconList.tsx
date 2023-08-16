@@ -19,6 +19,7 @@ interface IconProp{
 interface HeaderProp{
   classname: string;
   content: string;
+  size?: 'xlarge' | 'medium' | 'large' | 'small';
 }
 interface DescriptionProp{
   classname: string;
@@ -35,7 +36,7 @@ const IconList:React.FC<Props> = ({
      <>
        <div className={classname}>
           <Icon classname={iconProps.classname} iconname={iconProps.iconname}></Icon>
-          <Header classname={headerProps.classname} content={headerProps.content}></Header>
+          <Header classname={headerProps.classname} content={headerProps.content} size={headerProps.size}></Header>
         </div>
         {hasDescription && 
         <div className='icon-item-description'>

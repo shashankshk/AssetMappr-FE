@@ -1,6 +1,7 @@
 import path from 'path'
-import { Configuration } from 'webpack'
+import webpack, { Configuration } from 'webpack'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
+import Dotenv from 'dotenv-webpack'
 import * as webpackDevServer from 'webpack-dev-server'
 
 const config: Configuration = {
@@ -15,13 +16,17 @@ const config: Configuration = {
       },
       {
         test: /\.scss$/,
-          use: [{
-            loader: 'style-loader'
-          }, {
-            loader: 'css-loader' 
-          }, {
-            loader: 'sass-loader'
-          }]
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
         test: /\.(jpe?g|gif|png|svg)$/i,
@@ -45,6 +50,9 @@ const config: Configuration = {
     publicPath: '/',
   },
   plugins: [
+    new Dotenv({
+      path: './.env',
+    }),
     new CopyWebpackPlugin({
       patterns: [{ from: 'public' }],
     }),

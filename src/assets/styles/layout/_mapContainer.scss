@@ -1,0 +1,22 @@
+.map-container {
+    .map-container-topnav {
+        height: 80px;
+        background: #FFF;
+        border: 1px solid #EEF2F6;
+        .map-container-options{
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            margin-top: 15px;
+            margin-left: 5px;
+            .sel-category-option{
+                font-size: 14px;
+                padding: 1px;
+                min-height: 0;
+            }
+            .add-comment-button{
+                font-size: 14px;
+            }
+        }
+    }
+}

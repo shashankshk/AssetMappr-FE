@@ -7,11 +7,19 @@ import InputLabel from '../../../components/input/inputlabel/InputLabel'
 import InputField from '../../../components/input/inputfield/InputField'
 import SelectOption from '../../../components/select/SelectOption'
 import Button from '../../../components/button/Button'
+import { useSignup } from '../SignUpContext'
+import axios from 'axios'
+import { BASE_URL } from '../../../utils/constants'
 // component which asks the user for their profile information
 // TODO: For mobile view, modify the positions of the header and the button
 const ProfileInfoScreen = () => {
   const navigate = useNavigate()
-
+  const { data } = useSignup()
+  useEffect(() => {
+    if (!data.userId) {
+      navigate('/signup')
+    }
+  }, [navigate])
   const ethnicityOptions = [
     { label: 'Hispanic', value: 'Hispanic' },
     { label: 'Non-Hispanic', value: 'Non-Hispanic' },
@@ -37,21 +45,43 @@ const ProfileInfoScreen = () => {
     { label: 'I wish not to self-identify', value: 'not_to_identify' },
   ]
 
-  const handleProfileSubmit = async () => {
-    navigate('/home')
+  const handleProfileSubmit = async (e: any) => {
+    e.preventDefault()
+    /*
+    try {
+      const profileData = {
+        userId: data.userId,
+        sex,
+        race,
+        ethnicity,
+        dob,
+      }
+      const response = await axios.post(`${BASE_URL}/user/updateProfile`, profileData)
+      if (response.status == 201) {
+        const userId = response.data.userId
+        navigate('/login')
+      }
+    } catch (err: any) {
+  
+    }*/
+    navigate('/login')
   }
 
-  const [selectedRace, setSelectedRace] = useState('')
-  const [selectedSex, setSelectedSex] = useState('')
+  const [race, setRace] = useState('')
+  const [sex, setSex] = useState('')
+  const [dob, setDob] = useState('')
+  const [userchoicesex, setUserChoiceSex] = useState('')
+  const [userchoicerace, setUserChoiceRace] = useState('')
+  const [ethnicity, setEthnicity] = useState('')
 
   return (
     <>
-      <Header classname='header' content='Profile Information' />
+      <Header classname='big_header' content='Profile Information' />
       <form onSubmit={handleProfileSubmit}>
         <div className='profile_container'>
           <InputLabel
             htmlfor='date_of_birth'
-            classname='required_dob'
+            classname='profile_label'
             content='1. What is your date of birth?'
           />
           <InputField
@@ -61,53 +91,59 @@ const ProfileInfoScreen = () => {
             placeholder='MM/DD/YYYY'
             autocomplete='off'
             required={true}
+            onchange={(e) => setDob(e.target.value)}
           />
 
-          <InputLabel htmlfor='ethnicity' content='2. What is your ethnicity? (Optional)' />
+          <InputLabel htmlfor='ethnicity' content='2. What is your ethnicity? (Optional)' classname='profile_label' />
           <SelectOption
             classname='select_ethnicity'
             id='ethnicity'
             name='ethnicity'
             initialValue=''
+            onchange={(e) => setEthnicity(e.target.value)}
             initialLabel='Select your response'
             options={ethnicityOptions}
           ></SelectOption>
 
-          <InputLabel htmlfor='race' content='3. What is your race? (Optional)' />
+          <InputLabel htmlfor='race' content='3. What is your race? (Optional)' classname='profile_label'/>
           <SelectOption
             classname='select_race'
             id='race'
             name='race'
-            onchange={(e) => setSelectedRace(e.target.value)}
+            onchange={(e) => setRace(e.target.value)}
             initialValue=''
             initialLabel='Select your response'
             options={raceOptions}
           ></SelectOption>
 
-          {selectedRace === 'self_identify' && (
+          {race === 'self_identify' && (
             <InputField
               type='text'
               className='self_race'
               placeholder='Please tell us what you identify as (optional)'
+              value={userchoicerace}
+              onchange={(e) => setUserChoiceRace(e.target.value)}
             />
           )}
 
-          <InputLabel htmlfor='sex' content='4. What is your sex? (Optional)' />
+          <InputLabel htmlfor='sex' content='4. What is your sex? (Optional)' classname='profile_label'/>
           <SelectOption
             classname='select_sex'
             id='sex'
             name='sex'
-            onchange={(e) => setSelectedSex(e.target.value)}
+            onchange={(e) => setSex(e.target.value)}
             initialValue=''
             initialLabel='Select your response'
             options={selectedSexOptions}
           />
 
-          {selectedSex === 'Other' && (
+          {sex === 'Other' && (
             <InputField
               type='text'
               className='self_sex'
               placeholder='Please tell us which (optional)'
+              value={userchoicesex}
+              onchange={(e) => setUserChoiceSex(e.target.value)}
             />
           )}
         </div>
