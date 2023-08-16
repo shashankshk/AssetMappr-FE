@@ -3,7 +3,10 @@ name: Deploy FE to EC2 - Development
 on:
   push:
     branches:
-      - 'release/dev/**'      
+      - 'release/dev/**' 
+  pull_request:
+    branches:
+      - main     
 
 jobs:
   deploy:
@@ -27,22 +30,37 @@ jobs:
           IMAGE: "${{ vars.APP_NAME }}-${{ steps.vars.outputs.sha_short }}:latest"
           APP: ${{ vars.APP_NAME }}
           PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY  }}
-          HOSTNAME : ${{ secrets.AWS_EC2_HOST  }}
+          HOSTNAME : ${{ vars.AWS_EC2_HOST  }}
           USER_NAME : ${{ secrets.AWS_EC2_USER  }}
+          BASE_MAP_ID : ${{ secrets.BASE_MAP_ID  }}
+          GOOGLE_MAPS_API_KEY : ${{ secrets.GOOGLE_MAPS_API_KEY  }}
+          BASE_API_URL : ${{ vars.BASE_API_URL  }}
         run: |
           echo "Deploying image: $IMAGE"
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
+            rm -rf frontend
+            mkdir frontend
+          '
+          # Copy code to remote repo          
+          scp -o StrictHostKeyChecking=no -i private_key -r ./* ${USER_NAME}@${HOSTNAME}:~/frontend/.
           # Copy code to remote repo
-          env | grep -E 'CONTAINER|IMAGE|APP' > env_vars.txt
-          scp -o StrictHostKeyChecking=no -i private_key env_vars.txt ${USER_NAME}@${HOSTNAME}:
-          # Copy code to remote repo
-          scp -o StrictHostKeyChecking=no -i private_key -r ${{ vars.APP_NAME }} ${USER_NAME}@${HOSTNAME}:
+          env | grep -E 'CONTAINER|IMAGE|APP|BASE_API_URL|BASE_MAP_ID|GOOGLE_MAPS_API_KEY' > .env
+          scp -o StrictHostKeyChecking=no -i private_key .env ${USER_NAME}@${HOSTNAME}:~/frontend/.
           # Connect to your EC2 instance via SSH and run Docker commands          
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
-            source env_vars.txt
+            sudo apt-get update
+            curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
+            sudo usermod -aG docker $(whoami)
+            newgrp docker
+            cd frontend
+            source .env
             docker stop $CONTAINER || true
             docker rm $CONTAINER || true
-            cd $APP
             docker build -t $IMAGE .
             docker run -d -p 80:80 --name $CONTAINER $IMAGE
           '
+          # Backend server details
+          echo "Connected to - $BASE_API_URL"
+          # Frontend server details
+          echo "Serving on - $HOSTNAME"
