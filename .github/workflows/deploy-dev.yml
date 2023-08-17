@@ -59,7 +59,7 @@ jobs:
             docker rm $CONTAINER || true
             docker image prune -a --force --filter "until=240h"
             docker build -t $IMAGE .
-            docker run -d -p 80:80 --name $CONTAINER $IMAGE
+            docker run --env-file .env -d -p 80:80 --name $CONTAINER $IMAGE
           '
           # Backend server details
           echo "Connected to - $BASE_API_URL"

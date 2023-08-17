@@ -34,9 +34,6 @@ const Step1: FC<ParentProps> = ({ dataKey, setErrMsg }) => {
     return true
   }
   useEffect(() => {
-    console.log(data[dataKey])
-    console.log(BASE_URL)
-    console.log(process.env.BASE_API_URL)
     if (!data[dataKey]) {
       navigate('/signup')
     }
