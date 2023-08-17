@@ -24,7 +24,7 @@ const CommunitySelection: FC<ParentProps> = ({ dataKey }) => {
   //   }
   // }, [data, navigate, resetData])
   const onClick = async () => {
-    addData(dataKey, { comGeoId: selectedOption })
+    addData(dataKey, { comGeoId: +selectedOption })
     navigate('/signup/basicinfo')
   }
 

@@ -1,5 +1,5 @@
 # Use an official Node.js 
-FROM node:14 as build
+FROM node:14 as package
 
 # Set the working directory 
 WORKDIR /app
@@ -9,6 +9,9 @@ COPY package*.json ./
 
 # Install project dependencies
 RUN npm install
+
+# Stage 2: Build the React Application
+FROM package as build
 
 # Defaults to production
 ARG NODE_ENV=production
@@ -20,6 +23,7 @@ COPY . .
 # Build the React application 
 RUN npm run build
 
+# Stage 3: Attach nginx
 # Nginx server
 FROM nginx:alpine
 

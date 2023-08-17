@@ -3,6 +3,8 @@ import webpack, { Configuration } from 'webpack'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import * as webpackDevServer from 'webpack-dev-server'
 
+require('dotenv').config({ path: './.env' });
+
 const config: Configuration = {
   mode: (process.env.NODE_ENV as 'production' | 'development' | undefined) ?? 'development',
   entry: './src/index.tsx',
@@ -53,9 +55,9 @@ const config: Configuration = {
       patterns: [{ from: 'public' }],
     }),
     new webpack.DefinePlugin({
-      'process.env.GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
-      'process.env.BASE_API_URL': JSON.stringify(process.env.BASE_API_URL),
-      'process.env.BASE_MAP_ID': JSON.stringify(process.env.BASE_MAP_ID),
+      'process.env.GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY || 'key'),
+      'process.env.BASE_API_URL': JSON.stringify(process.env.BASE_API_URL || 'url'),
+      'process.env.BASE_MAP_ID': JSON.stringify(process.env.BASE_MAP_ID || 'map'),
     }),
   ],
   devServer: {
